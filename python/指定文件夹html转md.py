@@ -9,7 +9,9 @@ html_files = [file for file in os.listdir(directory_path) if file.endswith('.htm
 
 # 初始化html2text转换器
 converter = html2text.HTML2Text()
-
+converter.images_to_alt = False  # 保留图片
+converter.unicode_snob = True   # 支持Unicode字符
+converter.body_width = 0        # 不限制文本宽度，以保留链接
 # 遍历HTML文件列表
 for html_file in html_files:
     # 读取HTML文件内容
