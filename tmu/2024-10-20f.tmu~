@@ -1577,61 +1577,57 @@
     <associate|auto-16|<tuple|2.4|13>>
     <associate|auto-17|<tuple|2.5|14>>
     <associate|auto-18|<tuple|2.6|15>>
-    <associate|auto-19|<tuple|2.6.1|16>>
+    <associate|auto-19|<tuple|2.6.1|15>>
     <associate|auto-2|<tuple|1.1|5>>
-    <associate|auto-20|<tuple|2.7|17>>
-    <associate|auto-21|<tuple|3|17>>
-    <associate|auto-22|<tuple|3.0.1|20>>
+    <associate|auto-20|<tuple|2.7|16>>
+    <associate|auto-21|<tuple|3|19>>
+    <associate|auto-22|<tuple|3.0.1|19>>
     <associate|auto-23|<tuple|3.0.2|22>>
-    <associate|auto-24|<tuple|3.1|23>>
-    <associate|auto-25|<tuple|3.2|24>>
-    <associate|auto-26|<tuple|4|24>>
-    <associate|auto-27|<tuple|4.1|24>>
-    <associate|auto-28|<tuple|4.1.1|25>>
-    <associate|auto-29|<tuple|4.2|26>>
+    <associate|auto-24|<tuple|3.1|24>>
+    <associate|auto-25|<tuple|3.2|25>>
+    <associate|auto-26|<tuple|4|27>>
+    <associate|auto-27|<tuple|4.1|27>>
+    <associate|auto-28|<tuple|4.1.1|28>>
+    <associate|auto-29|<tuple|4.2|29>>
     <associate|auto-3|<tuple|1.1.1|5>>
-    <associate|auto-30|<tuple|4.2.1|26>>
-    <associate|auto-31|<tuple|4.3|26>>
-    <associate|auto-32|<tuple|4.4|28>>
-    <associate|auto-33|<tuple|4.4.1|29>>
-    <associate|auto-34|<tuple|4.4.2|29>>
-    <associate|auto-35|<tuple|4.5|30>>
-    <associate|auto-36|<tuple|4.6|30>>
-    <associate|auto-37|<tuple|4.7|31>>
-    <associate|auto-38|<tuple|4.8|31>>
-    <associate|auto-39|<tuple|5|32>>
+    <associate|auto-30|<tuple|4.2.1|29>>
+    <associate|auto-31|<tuple|4.3|29>>
+    <associate|auto-32|<tuple|4.4|30>>
+    <associate|auto-33|<tuple|4.4.1|31>>
+    <associate|auto-34|<tuple|4.4.2|31>>
+    <associate|auto-35|<tuple|4.5|31>>
+    <associate|auto-36|<tuple|4.6|33>>
+    <associate|auto-37|<tuple|4.7|34>>
+    <associate|auto-38|<tuple|4.8|35>>
+    <associate|auto-39|<tuple|5|37>>
     <associate|auto-4|<tuple|1.1.2|6>>
-    <associate|auto-40|<tuple|5.1|33>>
-    <associate|auto-41|<tuple|5.1.1|33>>
-    <associate|auto-42|<tuple|5.1.2|33>>
-    <associate|auto-43|<tuple|5.1.3|33>>
-    <associate|auto-44|<tuple|5.1.4|34>>
-    <associate|auto-45|<tuple|5.1.5|34>>
-    <associate|auto-46|<tuple|5.2|35>>
-    <associate|auto-47|<tuple|5.2.1|37>>
-    <associate|auto-48|<tuple|5.2.2|37>>
-    <associate|auto-49|<tuple|5.3|41>>
+    <associate|auto-40|<tuple|5.1|37>>
+    <associate|auto-41|<tuple|5.1.1|37>>
+    <associate|auto-42|<tuple|5.1.2|37>>
+    <associate|auto-43|<tuple|5.1.3|38>>
+    <associate|auto-44|<tuple|5.1.4|38>>
+    <associate|auto-45|<tuple|5.1.5|39>>
+    <associate|auto-46|<tuple|5.2|40>>
+    <associate|auto-47|<tuple|5.2.1|40>>
+    <associate|auto-48|<tuple|5.2.2|40>>
+    <associate|auto-49|<tuple|5.3|40>>
     <associate|auto-5|<tuple|2|7>>
-    <associate|auto-50|<tuple|5.3.1|43>>
-    <associate|auto-51|<tuple|5.3.2|?>>
-    <associate|auto-52|<tuple|5.3.3|?>>
-    <associate|auto-53|<tuple|6|?>>
-    <associate|auto-54|<tuple|平 方 根 函 数 积 分 : |?>>
-    <associate|auto-55|<tuple|6.1|?>>
-    <associate|auto-56|<tuple|6.1|?>>
+    <associate|auto-50|<tuple|5.3.1|41>>
+    <associate|auto-51|<tuple|5.3.2|41>>
+    <associate|auto-52|<tuple|5.3.3|42>>
+    <associate|auto-53|<tuple|6|45>>
+    <associate|auto-54|<tuple|平 方 根 函 数 积 分 : |45>>
+    <associate|auto-55|<tuple|6.1|49>>
+    <associate|auto-56|<tuple|6.1|51>>
     <associate|auto-6|<tuple|2.1|7>>
     <associate|auto-7|<tuple|2.1.1|8>>
     <associate|auto-8|<tuple|2.2|9>>
-    <associate|auto-9|<tuple|2.2.1|11>>
-    <associate|bib-TeXmacs:vdH:book|<tuple|1|43>>
-    <associate|footnote-3.1|<tuple|3.1|31>>
-    <associate|footnote-4.1|<tuple|4.1|37>>
-    <associate|footnote-5.1|<tuple|5.1|?>>
-    <associate|footnote-6.1|<tuple|6.1|?>>
-    <associate|footnr-3.1|<tuple|3.1|31>>
-    <associate|footnr-4.1|<tuple|4.1|37>>
-    <associate|footnr-5.1|<tuple|5.1|?>>
-    <associate|footnr-6.1|<tuple|6.1|?>>
+    <associate|auto-9|<tuple|2.2.1|10>>
+    <associate|bib-TeXmacs:vdH:book|<tuple|1|51>>
+    <associate|footnote-5.1|<tuple|5.1|38>>
+    <associate|footnote-6.1|<tuple|6.1|45>>
+    <associate|footnr-5.1|<tuple|5.1|38>>
+    <associate|footnr-6.1|<tuple|6.1|45>>
   </collection>
 </references>
 
@@ -1641,7 +1637,7 @@
       TeXmacs:vdH:book
     </associate>
     <\associate|idx>
-      <tuple|<tuple|平 方 根 函 数 积 分 : |>|<pageref|auto-48>>
+      <tuple|<tuple|平 方 根 函 数 积 分 : |>|<pageref|auto-54>>
     </associate>
     <\associate|toc>
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>预览> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
@@ -1682,65 +1678,77 @@
 
       <with|par-left|<quote|1tab>|2.6.1<space|2spc>克拉默法则 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-19>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>最最最易错的分解> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-20><vspace|0.5fn>
+      2.7<space|2spc>已知两个方程组的通解，求公共解。 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-20>
 
-      <with|par-left|<quote|1tab>|3.0.2<space|2spc><with|mode|<quote|math>|<frac|x<rsup|2>+c|<around*|(|x+a|)><around*|(|x+b|)><rsup|2>>><assign|math-display|true> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-21>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>最最最易错的分解> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-21><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|3.0.3<space|2spc>arccos的区间 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-22>>
+      <with|par-left|<quote|1tab>|3.0.1<space|2spc><with|mode|<quote|math>|<frac|x<rsup|2>+c|<around*|(|x+a|)><around*|(|x+b|)><rsup|2>>><assign|math-display|true> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-22>>
 
-      3.1<space|2spc>函数极限 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-23>
+      <with|par-left|<quote|1tab>|3.0.2<space|2spc>arccos的区间 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-23>>
 
-      <with|par-left|<quote|1tab>|3.1.1<space|2spc>复合函数 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-24>>
+      3.1<space|2spc>曲率圆 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-24>
 
-      3.2<space|2spc>数列极限 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-25>
+      3.2<space|2spc>判断函数的凹凸性，并根据凹凸函数的图像性质求解 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-25>
 
-      <with|par-left|<quote|1tab>|3.2.1<space|2spc>极限存在证明 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-26>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>高数基础> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-26><vspace|0.5fn>
 
-      3.3<space|2spc>连续与可导 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-27>
+      4.1<space|2spc>函数极限 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-27>
 
-      3.4<space|2spc>方程实根数 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-28>
+      <with|par-left|<quote|1tab>|4.1.1<space|2spc>复合函数 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-28>>
 
-      <with|par-left|<quote|1tab>|3.4.1<space|2spc>分情况讨论 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-29>>
+      4.2<space|2spc>数列极限 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-29>
 
-      <with|par-left|<quote|1tab>|3.4.2<space|2spc>参数分离 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-30>>
+      <with|par-left|<quote|1tab>|4.2.1<space|2spc>极限存在证明 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-30>>
 
-      3.5<space|2spc>绝对值\|X\| <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-31>
+      4.3<space|2spc>连续与可导 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-31>
 
-      3.6<space|2spc>中值定理 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-32>
+      4.4<space|2spc>方程实根数 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-32>
 
-      3.7<space|2spc>已知两个方程组的通解，求公共解。 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-33>
+      <with|par-left|<quote|1tab>|4.4.1<space|2spc>分情况讨论 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-33>>
 
-      3.8<space|2spc>sinx与cosx <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-34>
+      <with|par-left|<quote|1tab>|4.4.2<space|2spc>参数分离 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-34>>
 
-      3.9<space|2spc>微分方程 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-35>
+      4.5<space|2spc>绝对值\|X\| <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-35>
 
-      <with|par-left|<quote|1tab>|3.9.1<space|2spc>二阶，少y <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-36>>
+      4.6<space|2spc>中值定理 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-36>
 
-      <with|par-left|<quote|1tab>|3.9.2<space|2spc><with|mode|<quote|math>|y<around*|(|x|)>=u<around*|(|x|)>g<around*|(|x|)>><assign|math-display|true>的二阶微分方程 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-37>>
+      4.7<space|2spc>sinx与cosx <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-37>
 
-      <with|par-left|<quote|1tab>|3.9.3<space|2spc>一个简单的倒带换 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-38>>
+      4.8<space|2spc>函数图像与根 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-38>
 
-      <with|par-left|<quote|1tab>|3.9.4<space|2spc>高阶K重根 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-39>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>高数下> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-39><vspace|0.5fn>
 
-      3.10<space|2spc>定积分应用 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-40>
+      5.1<space|2spc>微分方程 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-40>
 
-      <with|par-left|<quote|1tab>|3.10.1<space|2spc>旋转体体积，非<with|mode|<quote|math>|y轴,V<rsub|>=V<rsub|1>-V<rsub|2>><assign|math-display|true> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-41>>
+      <with|par-left|<quote|1tab>|5.1.1<space|2spc>二阶，少y <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-41>>
 
-      <with|par-left|<quote|1tab>|3.10.2<space|2spc>积分比大小 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-42>>
+      <with|par-left|<quote|1tab>|5.1.2<space|2spc><with|mode|<quote|math>|y<around*|(|x|)>=u<around*|(|x|)>g<around*|(|x|)>><assign|math-display|true>的二阶微分方程 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-42>>
 
-      3.11<space|2spc>重积分 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-43>
+      <with|par-left|<quote|1tab>|5.1.3<space|2spc>一个简单的倒带换 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-43>>
 
-      <with|par-left|<quote|1tab>|3.11.1<space|2spc>分段区间 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-44>>
+      <with|par-left|<quote|1tab>|5.1.4<space|2spc><with|mode|<quote|math>|<frac|dy|dx>=<frac|dy|dt>*<frac|dt|dx>><assign|math-display|true> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-44>>
 
-      <with|par-left|<quote|1tab>|3.11.2<space|2spc>区间相同，二重积分保序性 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-45>>
+      <with|par-left|<quote|1tab>|5.1.5<space|2spc>高阶K重根 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-45>>
 
-      <with|par-left|<quote|1tab>|3.11.3<space|2spc>二重积分存在 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-46>>
+      5.2<space|2spc>定积分应用 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-46>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>积分表> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-47><vspace|0.5fn>
+      <with|par-left|<quote|1tab>|5.2.1<space|2spc>旋转体体积，非<with|mode|<quote|math>|y轴,V<rsub|>=V<rsub|1>-V<rsub|2>><assign|math-display|true> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-47>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|索引> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-49><vspace|0.5fn>
+      <with|par-left|<quote|1tab>|5.2.2<space|2spc>积分比大小 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-48>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|参考文献> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-50><vspace|0.5fn>
+      5.3<space|2spc>重积分 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-49>
+
+      <with|par-left|<quote|1tab>|5.3.1<space|2spc>分段区间 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-50>>
+
+      <with|par-left|<quote|1tab>|5.3.2<space|2spc>区间相同，二重积分保序性 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-51>>
+
+      <with|par-left|<quote|1tab>|5.3.3<space|2spc>二重积分存在 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-52>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>积分表> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-53><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|索引> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-55><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|参考文献> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-56><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
