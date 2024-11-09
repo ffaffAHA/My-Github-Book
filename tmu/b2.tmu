@@ -1,0 +1,753 @@
+<TMU|<tuple|1.0.5|1.2.9.5>>
+
+<style|<tuple|generic|chinese>>
+
+<\body>
+  <chapter|线性代数>
+
+  <section|线性表出>
+
+  [2003年真题]设向量组<math|I>:<math|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<ldots\>\<ldots\>,\<alpha\><rsub|t>>可由向量组<math|I*I:\<beta\><rsub|1>,\<beta\><rsub|2>,\<ldots\>\<ldots\>\<beta\><rsub|s>>线性表示，则
+
+  <math|\<cal-A\>>. 当<math|t\<less\>s>时，向量组<math|I*I>必线性相关
+
+  B. 当<math|t\<gtr\>s>时，向量组<math|I*I>必线性相关
+
+  <math|\<bbb-C\>>. 当<math|t\<less\>s>时，向量组<math|I> 必线性相关
+
+  D. 当<math|t\<gtr\>s>时，向量组<math|I>必线性相关
+
+  [简解] 根据定理："若<math|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<cdots\>,\<alpha\><rsub|t>>可有<math|\<beta\><rsub|1>,\<beta\><rsub|2>,\<cdots\>,\<beta\><rsub|s>>线性表出，且<math|t\<gtr\>s>,则<math|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<cdots\>,\<alpha\><rsub|t>>必线性相关
+
+  即<with|color|red|若多数向量可以由少数向量线性表出，则此多数向量必线性相关>，故选 D.
+
+  若<math|A> 为<math|m\<times\>n> 矩阵，则以下哪个选项是正确的？
+
+  A. 若<math|n\<gtr\>m>,由<math|A>的行秩是行极大线性无关组的向量个数<math|\<leq\>>行向量组的总向量个数<math|=m>,则<math|r<around|(|A|)>=m> B. 由<math|A>的行秩是行极大线性无关组的向量个数=行向量组的总向量个数<math|=m>,则<math|r<around|(|A|)>\<leq\>m> <math|\<bbb-C\>.*A>的列秩是列极大线性无关组的向量个数=列向量组的总向量个数<math|=n>,则<math|r<around|(|A|)>=n> D. <math|A>的列秩是列极大线性无关组的向量个数<math|\<leq\>>列向量组的总向量个数<math|=n>,则<math|r<around|(|A|)>\<leq\>n>
+
+  因为<math|r<around|(|A|)>=A>的行秩<math|=A>的列秩， 而<math|A>的列秩是列极大线性无关组的向量个数<math|\<leq\>>列向量组的总向量个数<math|=n>. 同理<math|A>的行秩是行极大线性无关组的向量个数<math|\<leq\>>行向量组的总向量个数<math|=m>. 综上，<math|r<around|(|A|)>\<leq\>> min <math|<around|(|m,n|)>>,即有<math|r<around|(|A|)>\<leq\>n>. 选D.
+
+  其余选项：
+
+  <math|\<bbb-A\>>:只能得出<math|r<around|(|A|)>\<leq\>m>.
+
+  B:<math|A>的行秩是行极大线性无关组的向量个数<math|\<leq\>>行向量组的总向量个数<math|=m>
+
+  \;
+
+  <subsection|线性相关>
+
+  由特征值的定义
+
+  有<math|<around*|[|A*<around|(|\<lambda\><rsub|2>*\<alpha\><rsub|1>|)>,A*<around|(|\<lambda\><rsub|1>*\<alpha\><rsub|2>|)>|]>=<around*|[|\<lambda\><rsub|1>*\<lambda\><rsub|2>*\<alpha\><rsub|1>,\<lambda\><rsub|1>*\<lambda\><rsub|2>*\<alpha\><rsub|2>|]>> 极大线性无关组中所含向量的个数<math|r>称为向量组的秩，因此需判定<math|<around|[|\<lambda\><rsub|1>*\<lambda\><rsub|2>*\<alpha\><rsub|1>,\<lambda\><rsub|1>*\<lambda\><rsub|2>*\<alpha\><rsub|2>|]>>中的线性无关向量。\ 
+
+  由互不相同的特征值对应的特征向量线性无关，则<math|\<alpha\><rsub|1>>与<math|\<alpha\><rsub|2>>线性无关。
+
+  \ 当<math|\<lambda\><rsub|1>\<neq\>0,\<lambda\><rsub|2>\<neq\>0\<Rightarrow\>\<lambda\><rsub|1>*\<lambda\><rsub|2>\<neq\>0>,则<math|\<lambda\><rsub|1>*\<lambda\><rsub|2>*\<alpha\><rsub|1>\<neq\><with|math-font-family|bf|0>,\<lambda\><rsub|1>*\<lambda\><rsub|2>*\<alpha\><rsub|2>\<neq\><with|math-font-family|bf|0>>, 故<math|\<lambda\><rsub|1>*\<lambda\><rsub|3>*\<alpha\><rsub|1>>与<math|\<lambda\><rsub|1>*\<lambda\><rsub|3>*\<alpha\><rsub|3>>线性无关，向量组<math|A*<around|(|\<lambda\><rsub|2>\<alpha\><rsub|1>|)>,A*<around|(|\<lambda\><rsub|1>*\<alpha\><rsub|3>|)>>的秩为 2.
+
+  <with|color|red|♥><math|\<alpha\><rsub|1>> 和 <math|A*<around|(|\<alpha\><rsub|1>+\<alpha\><rsub|2>|)>> 线性无关 <math|\<Leftrightarrow\>r<around|(|\<alpha\><rsub|1>,\<lambda\><rsub|1>*\<alpha\><rsub|1>+\<lambda\><rsub|2>*\<alpha\><rsub|2>|)>=2>。 这是因为 <math|\<alpha\><rsub|1>> 和 <math|\<alpha\><rsub|2>> 是不同特征值的特征向量，所以它们线性无关，即 <math|r<around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>|)>=2>。要使 <math|r<around|(|\<alpha\><rsub|1>,\<lambda\><rsub|1>*\<alpha\><rsub|1>+\<lambda\><rsub|2>*\<alpha\><rsub|2>|)>=2>，必须保证 <math|\<lambda\><rsub|2>\<neq\>0>，这样矩阵 <math|<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|\<lambda\><rsub|1>>>|<row|<cell|0>|<cell|\<lambda\><rsub|2>>>>>>|]>> 的秩才能为 2。Z \ 
+
+  <with|color|red|♥> 设<math|A=<around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>|)>>是三阶矩阵，<math|A<rsup|\<ast\>>>为<math|A>的伴随矩阵，若<math|<around|(|0,2,1|)><rsup|<math-up|T>>>是方程组<math|A<math-bf|x>=<with|math-font-family|bf|0>>的一个基础解系，则<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>>的基础解系可为
+
+  <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|<text|A.>>|<cell|\<alpha\><rsub|1>>>>>>> <math|B>. <math|\<alpha\><rsub|1>,\<alpha\><rsub|2>> <math|C>. <math|\<alpha\><rsub|2>,\<alpha\><rsub|3>> <math|\<cal-D\>>. <math|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>>
+
+  [分析]没有具体的线性方程组，先用秩来决定线性无关解的个数，再用<math|A*B=O> 来得到解向量。
+
+  [解答] 用秩来决定线性无关解的个数： 因为<math|A<math-bf|x>=<with|math-font-family|bf|0>> 只有 1 个线性无关的解，即 <math|n-r<around|(|A|)>=1,n=3>,从而 <math|r<around|(|A|)>=2>. <math|由*r<around|(|A|)>=2=n-1,则*r<around|(|A<rsup|\<ast\>>|)>=1>. 有<math|n-r<around|(|A<rsup|\<ast\>>|)>=3-1=2>,故<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>>的基础解系中有 2 个线性无关的解向量。\ 
+
+  用<math|A*B=O>来得到解向量： <math|由*A<math-bf|x>=<with|math-font-family|bf|0>>有非零解，则<math|<around|\||A|\|>=0>. 由<math|A<rsup|\<ast\>>*A=<around|\||A|\|>*E>,及<math|<around|\||A|\|>=0>,有<math|A<rsup|\<ast\>>*A=O>,则<math|A> 的列向量全是<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>> 的解。
+
+  \ 而秩<math|r<around|(|A|)>=2>,故<math|A>的列向量中必有 2 个线性无关。 需找到这 2 个线性无关的列向量：\ 
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|由>A<around*|[|<tabular*|<tformat|<table|<row|<cell|0>>|<row|<cell|2>>|<row|<cell|1>>>>>|]>=<with|math-font-family|bf|0>,<text|即><around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>|)><around*|[|<tabular*|<tformat|<table|<row|<cell|0>>|<row|<cell|2>>|<row|<cell|1>>>>>|]>=<with|math-font-family|bf|0>,<text|则>2*\<alpha\><rsub|2>+\<alpha\><rsub|3>=<with|math-font-family|bf|0>,<text|即>\<alpha\><rsub|2>,\<alpha\><rsub|3><text|相关。>>>>>
+  </aligned>>
+
+  \ 综上，<math|\<alpha\><rsub|1>,\<alpha\><rsub|2>>无关，<math|\<alpha\><rsub|1>,\<alpha\><rsub|3>>无关。 选B.
+
+  <with|color|red|♥>[2011年真题)设<math|A=<around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>|)>> 是四阶矩阵，<math|A<rsup|\<ast\>>>为<math|A> 的伴随矩阵，若 <math|<around|(|1,0,1,0|)><rsup|<math-up|T>>> 是方程组 <math|A<math-bf|x>=<with|math-font-family|bf|0>> 的一个基础解系，则
+
+  <math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>>的基础解系可为
+
+  <math|A>. <math|\<alpha\><rsub|1>,\<alpha\><rsub|3>> <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|<with|math-font-family|rm|B.>>|<cell|\<alpha\><rsub|1>,\<alpha\><rsub|2>>>>>>> <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|<with|math-font-family|rm|C.<nbsp>>>|<cell|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>>>>>>> <math|\<cal-D\>>. <math|\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>>
+
+  [分析]没有具体的线性方程组，先用秩来决定线性无关解的个数，再用<math|A*B=O> 来得到解向量。\ 
+
+  [解答] 用秩来决定线性无关解的个数： 因为<with|font-series|bold|<math|A<math-bf|x>=<with|math-font-family|bf|0>>只有 1 >个线性无关的解，即<math|<with|font-series|bold|n-r<around|(|A|)>=1,n=4>>,从而<math|r<around|(|A|)>=3>. <math|由> <math|r<around|(|A|)>=3=n-1,则> <math|r<around|(|A<rsup|\<ast\>>|)>=1>. 有<with|font-series|bold|<math|n-r<around|(|A<rsup|\<ast\>>|)>=4-1=3>>,故<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>> 的基础解系中有 <with|font-series|bold|3 个线性无关的解向量>。 用<math|A*B=O>来得到解向量： 由<math|A<math-bf|x>=<with|math-font-family|bf|0>> 有非零解，则 <math|<around|\||A|\|>=0>. 由<math|A<rsup|\<ast\>>*A=<around|\||A|\|>*E>,及<math|<around|\||A|\|>=0>,有<math|A<rsup|\<ast\>>*A=O>.则<math|A> 的列向量全是<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>> 的解。 而秩<math|r<around|(|A|)>=3>,故<math|A>的列向量中必有 3 个线性无关。\ 
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|需找到这 3 个线性无关的列向量：>>>|<row|<cell|>|<cell|<text|由 >A<around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|0>>|<row|<cell|1>>|<row|<cell|0>>>>>|]>=0,<text|即 ><around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>|)><around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|0>>|<row|<cell|1>>|<row|<cell|0>>>>>|]>=0,<text|则 >\<alpha\><rsub|1>+\<alpha\><rsub|3>=0,<text|即 >\<alpha\><rsub|1>,\<alpha\><rsub|3><text|相关。>>>|<row|<cell|>|<cell|<text|综上>>>>>
+  </aligned>>
+
+  综上，<math|\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>>无关。
+
+  选D.
+
+  <subsection|向量组等价>
+
+  <\example>
+    \;
+
+    <math|<\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|若向量组><around|(|I|)>*<text|是向量组><around|(|I*I|)>*<text|的权大线性无关组,向量组><around|(|I*I*I|)>*<text|是向量组><around|(|I*V|)><text|的极大线性无关组,向量组><around|(|I|)>*<text|与><around|(|I*I*I|)><text|等价,则>>>|<row|<cell|>|<cell|<text|A、由量组><around|(|I*I|)>*<text|与><around|(|I*V|)><text|不等价,且><around|(|I|)>*<text|不一定可由><around|(|I*V|)><text|线性表出>>>|<row|<cell|>|<cell|<text|B、由重组><around|(|I*I|)>*<text|与><around|(|I*V|)><text|等价,且><around|(|I|)>*<text|不一定可由><around|(|I*V|)><text|线性表出>>>|<row|<cell|>|<cell|<text|C、向量组><around|(|I*I|)>*<text|与><around|(|I*V|)>*<text|等价,且><around|(|I*V|)>*<text|可由><around|(|I*V|)><text|线性表出>>>|<row|<cell|>|<cell|<text|D、向量组><around|(|I*V|)>*<text|与><around|(|I*V|)>*<text|不等价,但><around|(|I*V|)>*<text|可由><around|(|I*I*V|)><text|线性表出>>>|<row|<cell|>|<cell|<text|解】>>>|<row|<cell|>|<cell|<text|向量组完它的极大线性无关组等价,且等价具有递性,则><around|(|I|)>\<sim\><around|(|I*I|)>\<sim\><around|(|I*I*I|)>\<sim\><around|(|I*V|)><text|,且两两可以且相线性表出。>>>|<row|<cell|>|<cell|<text|选C.>>>>>
+    </aligned>>
+  </example>
+
+  等价向量组的定义是可以互相线性表出
+
+  <\example>
+    \;
+
+    <math|<\aligned>
+      <tformat|<table|<row|<cell|>|<cell|[2022*<text|年真题 设 >\<b-alpha\><rsub|1>=<matrix|<tformat|<table|<row|<cell|\<lambda\>>>|<row|<cell|1>>|<row|<cell|1>>>>>,\<b-alpha\><rsub|2>=<matrix|<tformat|<table|<row|<cell|1>>|<row|<cell|\<lambda\>>>|<row|<cell|1>>>>>,\<b-alpha\><rsub|3>=<matrix|<tformat|<table|<row|<cell|1>>|<row|<cell|1>>|<row|<cell|\<lambda\>>>>>>,\<b-alpha\><rsub|4>=<matrix|<tformat|<table|<row|<cell|1>>|<row|<cell|\<lambda\>>>|<row|<cell|\<lambda\><rsup|2>>>>>>,>>|<row|<cell|>|<cell|<text|若 向量组 ><around|(|I|)>:\<b-alpha\><rsub|1>,\<b-alpha\><rsub|2>,\<b-alpha\><rsub|3>*<text|与 向量组 ><around|(|I*I|)>:\<b-alpha\><rsub|1>,\<b-alpha\><rsub|2>,\<b-alpha\><rsub|4><text|等价>,>>|<row|<cell|>|<cell|<text|则 >\<lambda\><text|的取值范围为>>>|<row|<cell|>|<cell|<text|A.><around|{|\<lambda\>\<mid\>\<lambda\>\<in\>\<bbb-R\>|}>>>|<row|<cell|>|<cell|<text|B.><around|{|\<lambda\>\<mid\>\<lambda\>\<in\>\<bbb-R\>,\<lambda\>\<neq\>-1|}>>>|<row|<cell|>|<cell|<text|C.><around|{|\<lambda\>\<mid\>\<lambda\>\<in\>\<bbb-R\>,\<lambda\>\<neq\>-1,\<lambda\>\<neq\>-2|}>>>|<row|<cell|>|<cell|<text|D.><around|{|\<lambda\>\<mid\>\<lambda\>\<in\>\<bbb-R\>,\<lambda\>\<neq\>-2|}>>>>>
+    </aligned>>
+  </example>
+
+  \ \ \ <math|A<around*|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>|)>>,<math|B<around*|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|4>|)>> \ A\|B 求解<math|\<lambda\>>
+
+  <\with|color|red>
+    <\with|color|<pattern|C/Program Files/XmacsLabs/MoganResearch-1.2.9.5/misc/patterns/vintage/wood-xdark.png||>>
+      <section|两个方程同解>
+
+      线性无关的解的个数相同=\<gtr\>系数矩阵的秩相同
+
+      基础解系相同
+    </with>
+  </with>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|Ar>>>|<row|<cell|>|<cell|<text|令方程组()的系数矩阵为>A=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|3>|<cell|5>>|<row|<cell|2>|<cell|4>|<cell|6>>|<row|<cell|1>|<cell|a>|<cell|1>>>>>|]>.>>|<row|<cell|>|<cell|<text|令方程组(ll)的系数矩阵为>B=<around*|[|<tabular*|<tformat|<table|<row|<cell|b>|<cell|2>|<cell|c>>|<row|<cell|b<rsup|2>>|<cell|3>|<cell|c>>>>>|]>.>>>>
+  </aligned>>
+
+  由 方 程 组 同 解 , 则 <math|n-r<around|(|B|)>=> 方 程 ( ll) 线 性 无 关 解 的 个 数 = 方 程 ( l) 线 性 无 关 解 的 个 数 = 方 程 ( l) 线 性 无 关 解 的 个 数 <math|=n-r<around|(|A|)>>, 即 <math|r<around|(|B|)>=r<around|(|A|)>>. 因 为 <math|r<around|(|B|)>\<leq\>2>,则 <math|r<around|(|A|)>\<leq\>2>,即 <math|<around|\||A|\|>=0>, 有
+
+  <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|3>|<cell|3>>|<row|<cell|2>|<cell|4>|<cell|6>>|<row|<cell|1>|<cell|a>|<cell|1>>>>>=<det|<tformat|<table|<row|<cell|1>|<cell|3>|<cell|3>>|<row|<cell|0>|<cell|-2>|<cell|-4>>|<row|<cell|0>|<cell|-1>|<cell|0>>>>>=4*<around|(|a-1|)>=0>,则<math|a=1>.
+
+  \;
+
+  <\with|color|red>
+    <\equation*>
+      A \<Beta\>=O<space|2em>r<around*|(|A|)>+r<around*|(|B|)>\<leqslant\>min<around*|{|r<around*|(|A|)>,r<around*|(|B|)>|}>
+    </equation*>
+  </with>
+
+  由于<math|A,B>均非零，故<math|r<around|(|A|)>\<gtr\>0>,且<math|r<around|(|B|)>\<gtr\>0>,即<math|r<around|(|A|)>\<geq\>1,r<around|(|B|)>\<geq\>1>. 由于<math|A*B=O>,且<math|A> 是<math|5\<times\>4,B> 是<math|4\<times\>6> 矩阵，则 <math|r<around|(|A|)>+r<around|(|B|)>\<leq\>4>. 代入<math|r<around|(|A|)>\<geq\>1>,有<math|r<around|(|B|)>\<leq\>4-r<around|(|A|)>\<leq\>3>.因为已得出<math|r<around|(|B|)>\<geq\>1>,则<math|1\<leq\>r<around|(|B|)>\<leq\>3>.
+
+  <math|过*D>.
+
+  <\with|color|red>
+    \;
+
+    AB=O时的秩:若 A是 m\<times\>n矩阵,B是 n\<times\>s矩阵,AB=O,则 r(A)+r(B)\<leq\>n.
+  </with>
+
+  \;
+
+  已知 \<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>线性无关,则<left|[>\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3><right|]>可逆,又有A\<alpha\><rsub|1>,A\<alpha\><rsub|2>,A\<alpha\><rsub|3>的表达式,想到相似,即AP=PB\<Leftrightarrow\>P<rsup|-1>AP=B.
+
+  \ \ \ \ \ \ \ \ \ <math|1<space|11em>2<space|7em>3<space|11em>4<space|6em>5>
+
+  <\equation*>
+    列向量线性无关，可逆，AP=PB\<Leftrightarrow\>P<rsup|-1>AP=B
+  </equation*>
+
+  <\equation*>
+    A\<sim\>B;A<rsub|\<lambda\>>=B<rsub|\<lambda\>>
+  </equation*>
+
+  <\equation*>
+    <around*|\||\<lambda\>E-A|\|>=O
+  </equation*>
+
+  <\with|color|red>
+    <\subsection>
+      <with|color|red|已知特征值，求特征向量 <with|color|red|♥>>
+    </subsection>
+  </with>
+
+  <math|\<lambda\>\<rightarrow\>A,系数矩阵，行最简形矩阵，自由未知量x<rsub|x>=1,0；得到基础解系即属于特征值\<lambda\><rsub|x> 的特征向量>
+
+  \;
+
+  - 代入每个 \<lambda\><rsub|i>,得到线性方程组 (\<lambda\><rsub|i>E-A)<math-bf|x>=<with|math-font-family|bf|0>,通解即对应 \<lambda\><rsub|i>的全体特征向量(除去 <with|math-font-family|bf|0>向量)
+
+  -\ 
+
+  -\ 
+
+  -\ 
+
+  \;
+
+  <math|1.*当*\<lambda\><rsub|1>=\<lambda\><rsub|2>=1*时*，*由*<around|(|E-B|)><math-bf|x>=<with|math-font-family|bf|0>>,系数矩阵<math|E-B=<around*|[|<tabular*|<tformat|<table|<row|<cell|0>|<cell|0>|<cell|0>>|<row|<cell|-1>|<cell|-1>|<cell|-2>>|<row|<cell|-1>|<cell|-1>|<cell|-2>>>>>|]>\<to\><around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|1>|<cell|2>>|<row|<cell|0>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|0>>>>>|]>> 令 <math|x<rsub|2>,x<rsub|3>> 为 自 由 未 知 量 , <math|x<rsub|1>> 为 独 立 未 知 量 。 令 <math|x<rsub|2>,x<rsub|3>> 为 自 由 未 知 量 , <math|x<rsub|1>> 为 独 立 未 知 量 。 令 <math|x<rsub|2>=1,x<rsub|3>=0>,则 <math|x<rsub|1>=-1>. 令 <math|x<rsub|2>=0,x<rsub|3>=1>,则 <math|x<rsub|1>=-2>. 故<math|\<eta\><rsub|1>=<around|(|-1,1,0|)><rsup|T>,\<eta\><rsub|2>=<around|(|-2,0,1|)><rsup|T>> 是一个基础解系，即属于特征值<math|\<lambda\><rsub|1>=\<lambda\><rsub|2>=1> 的两个线性无关的特征向量。 2.当<math|\<lambda\><rsub|3>=4>时，由<math|<around|(|4*E-B|)><math-bf|x>=<with|math-font-family|bf|0>>,系数矩阵 <math|4*E-B=<around*|[|<tabular*|<tformat|<table|<row|<cell|3>|<cell|0>|<cell|0>>|<row|<cell|-1>|<cell|2>|<cell|-2>>|<row|<cell|-1>|<cell|-1>|<cell|1>>>>>|]>\<to\><around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|-1>>|<row|<cell|0>|<cell|0>|<cell|0>>>>>|]>> 令<math|x<rsub|3>> 为自由未知量，<math|x<rsub|1>,x<rsub|2>> 为独立未知量。 令<math|x<rsub|3>=1>,则<math|x<rsub|2>=1,x<rsub|1>=0>.故<math|\<eta\><rsub|3>=<around|(|0,1,1|)><rsup|<math-up|T>>> 是一个基础解系，即属于特征值 <math|\<lambda\><rsub|3>=4> 的一个特征向量。 综上，<math|\<eta\><rsub|1>,\<eta\><rsub|2>,\<eta\><rsub|3>>为三个线性无关的特征向量。 选<math|D>.
+
+  \;
+
+  <subsection|[分析]矩阵的对角化：>
+
+  \;
+
+  令<math|A>的特征值为<math|\<lambda\><rsub|1>,\<lambda\><rsub|2>,\<cdots\>,\<lambda\><rsub|n>>,设<math|A>有<math|n>个线性无关的特征向量<math|\<b-alpha\><rsub|1>,\<b-alpha\><rsub|2>,\<cdots\>,\<b-alpha\><rsub|n>> ,
+
+  取<math|P=<around|[|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<cdots\>,\<alpha\><rsub|n>|]>>,则有<math|P<rsup|-1>*A*P=\<Lambda\>>,其中<math|\<Lambda\>=<around*|[|<tabular*|<tformat|<table|<row|<cell|\<lambda\><rsub|1>>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|\<lambda\><rsub|2>>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|\<ddots\>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|\<lambda\><rsub|n>>>>>>|]>>.
+
+  <with|color|red|[解答]> 注意<math|P>的每一列为一个特征向量，且<math|P>中<math|\<b-alpha\><rsub|1>,\<b-alpha\><rsub|2>,<cdotp><cdotp><cdotp>,\<b-alpha\><rsub|n>> 排列次序应与 <math|\<Lambda\>> 中 <math|\<lambda\><rsub|1>,\<lambda\><rsub|2>,<cdotp><cdotp><cdotp>,\<lambda\><rsub|n>> 的排列次序 一致。\ 
+
+  \<less\>with\|color\|red\|[解答]\<gtr\>
+
+  \;
+
+  \ \ 
+
+  <\section>
+    A; 特征值；求可逆矩阵P ，相应的对角矩阵 <math|\<Lambda\>>
+  </section>
+
+  [1999年真题]设矩阵<math|A=<around*|[|<tabular*|<tformat|<table|<row|<cell|3>|<cell|2>|<cell|-2>>|<row|<cell|0>|<cell|-1>|<cell|0>>|<row|<cell|4>|<cell|2>|<cell|-3>>>>>|]>>,已知<math|A> 的特征值
+
+  为1，-1,-1.求可逆矩阵<math|P>,使得<math|P<rsup|-1>*AP=\<Lambda\>>为对角矩阵？
+
+  并求出相应的对角矩阵。
+
+  <subsection|相似的必要条件>
+
+  <math|[<text|1992年真题]设矩阵>A*<text|与>B*<text|相似,其中>A=<around*|[|<tabular*|<tformat|<table|<row|<cell|-2>|<cell|0>|<cell|0>>|<row|<cell|2>|<cell|x>|<cell|2>>|<row|<cell|3>|<cell|1>|<cell|1>>>>>|]>,B=<around*|[|<tabular*|<tformat|<table|<row|<cell|-1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|2>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|y>>>>>|]>,<text|求>x+y<text|的值。>>
+
+  [分析]由相似求未知参数，用相似的必要条件：1.迹相等；2.行列式相等；3.特征值相等
+
+  [解答]
+
+  相似矩阵的迹相等，则<math|<big|sum><rsub|i=1><rsup|n>a<rsub|i*i>=<big|sum><rsub|i=1><rsup|n>b<rsub|i*i>\<Rightarrow\>-2+x+1=y+2-1\<Rightarrow\>y=x-2>.
+
+  相似矩阵的行列式相等，则<math|<around|\||A|\|>=<around|\||B|\|>\<Rightarrow\><around|(|-2|)>*<around|(|x-2|)>=-2*y\<Rightarrow\>y=x-2>.
+
+  所以“1.迹相等”与“2.行列式相等”得到的等式相同，需要使用”3.特征值相等”.
+
+  因为对角矩阵 <math|B> 的特征值为<math|-1,2,y>,所以矩阵 <math|A> 的特征值也为<math|-1,2,y>.
+
+  用特征方程<math|<around|\||\<lambda\>*E-A|\|>=0>的根来求<math|A>的特征值：
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|由><around*|\||\<lambda\>*E-A|\|>=<around*|\||<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|\<lambda\>+2>|<cell|0>|<cell|0>>|<row|<cell|-2>|<cell|\<lambda\>-x>|<cell|-2>>|<row|<cell|-3>|<cell|-1>|<cell|\<lambda\>-1>>>>>|\|>=<around|(|\<lambda\>+2|)>*<around*|[|\<lambda\><rsup|2>-<around|(|x+1|)>*\<lambda\>+<around|(|x-2|)>|]>.>>|<row|<cell|>|<cell|<text|的>>>>>
+  </aligned>>
+
+  \ 知<math|\<lambda\>=-2>是<math|A>的特征值，因此必有<math|y=-2>. 综上，<math|x=y+2=0>,则答案为<math|x+y=-2>.
+
+  <subsection|实对称矩阵A（含参数），求可逆矩阵P，求对角矩阵<math|\<Lambda\>>>
+
+  [2002年真题 设实对称矩阵<math|A=<det|<tformat|<table|<row|<cell|a>|<cell|1>|<cell|1>>|<row|<cell|1>|<cell|a>|<cell|-1>>|<row|<cell|1>|<cell|-1>|<cell|a>>>>>>,求可逆矩阵<math|P>,使<math|P<rsup|-1>*A*P>为对角阵。
+
+  \;
+
+  <math|<around*|\||\<lambda\>E-A|\|>=O>;求特征值 <math|\<lambda\><rsub|n><space|1em>\<Lambda\>> \<checkmark\>;代入A，化最简阶梯形矩阵，自由未知数<math|X<rsub|n>>:q1<math|\<rightarrow\>>得到基础解系<math|<around*|(|特征向量|)>> \ <math|P>\ 
+
+  <\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|1. 求特征值:>>>|<row|<cell|>|<cell|<text|立特征方程:><around|\||\<lambda\>*E-A|\|>=<det|<tformat|<table|<row|<cell|\<lambda\>-a>|<cell|-1>|<cell|-1>>|<row|<cell|-1>|<cell|\<lambda\>-a>|<cell|1>>|<row|<cell|-1>|<cell|1>|<cell|\<lambda\>-a>>>>>=<det|<tformat|<table|<row|<cell|<with|color|red|\<lambda\>-a-1>>|<cell|\<lambda\>-a-1>|<cell|0>>|<row|<cell|-1>|<cell|\<lambda\>-a>|<cell|1>>|<row|<cell|0>|<cell|a+1-\<lambda\>>|<cell|\<lambda\>-a-1>>>>>>>|<row|<cell|>|<cell|=<around|(|\<lambda\>-a-1|)><rsup|2><det|<tformat|<table|<row|<cell|1>|<cell|1>|<cell|0>>|<row|<cell|-1>|<cell|\<lambda\>-a>|<cell|1>>|<row|<cell|0>|<cell|-1>|<cell|1>>>>>=<around|(|\<lambda\>-a-1|)><rsup|2><det|<tformat|<table|<row|<cell|1>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|\<lambda\>-a+1>|<cell|1>>|<row|<cell|0>|<cell|-1>|<cell|1>>>>>>>|<row|<cell|>|<cell|=<around|(|\<lambda\>-a-1|)><rsup|2>*<around|(|\<lambda\>-a+2|)>>>>>
+  </aligned>
+
+  <subsection|实对称矩阵的正交规范化>
+
+  对矩阵 <math|A> 执行特征值分解。\ 
+
+  - 将得到的特征向量作为矩阵 <math|Q> 的列。\ 
+
+  - 对 <math|Q> 的每一列向量 <math|q<rsub|i>> 执行归一化：<math|q<rsub|i>=<frac|q<rsub|i>|<around|\<\|\|\>|q<rsub|i>|\<\|\|\>>>>，其中 <math|<around|\<\|\|\>|q<rsub|i>|\<\|\|\>>> 是向量 <math|q<rsub|i>> 的欧几里得范数。 \ 
+
+  <subsection|<math|f<around*|(|A|)>>的特征值 及对应的特征向量>
+
+  <tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|1ln>|<cwith|1|-1|4|4|cell-halign|c>|<cwith|1|-1|4|4|cell-rborder|1ln>|<cwith|1|-1|5|5|cell-halign|c>|<cwith|1|-1|5|5|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|3|3|1|-1|cell-bborder|1ln>|<table|<row|<cell|矩阵>|<cell|A>|<cell|kA>|<cell|A<rsup|k>>|<cell|f(A)>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|特征值>|<cell|\<lambda\>>|<cell|k\<lambda\>>|<cell|\<lambda\><rsup|k>>|<cell|f(\<lambda\>)>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|对应特征向量>|<cell|\<alpha\>>|<cell|\<alpha\>>|<cell|\<alpha\>>|<cell|\<alpha\>>>>>> \ \ \ \ \ \ \ <math|A的特征值已知? f<around*|(|A|)>的特征值是? 对应的特征向量变了吗?/>
+
+  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 相似矩阵的性质 对应的特征向量是变的.
+
+  \;
+
+  \;
+
+  <tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|1ln>|<cwith|1|-1|4|4|cell-halign|c>|<cwith|1|-1|4|4|cell-rborder|0ln>|<cwith|1|1|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<table|<row|<cell|矩阵>|<cell|A<rsup|-1>>|<cell|A<rsup|*>>|<cell|A<rsup|-1>+f(A)>>|<row|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|特征值>|<cell|\<lambda\><rsup|-1>>|<cell|\|A\|\<lambda\><rsup|-1>>|<cell|\<lambda\><rsup|-1>+f(\<lambda\>)>>|<row|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|对应特征向量>|<cell|\<alpha\>>|<cell|\<alpha\>>|<cell|\<alpha\>>>>>><tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|1ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|1ln>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|1ln>|<cwith|1|-1|4|4|cell-halign|c>|<cwith|1|-1|4|4|cell-rborder|1ln>|<cwith|1|-1|5|5|cell-halign|c>|<cwith|1|-1|5|5|cell-rborder|0ln>|<cwith|2|2|1|-1|cell-bborder|1ln>|<cwith|4|4|1|-1|cell-bborder|1ln>|<cwith|6|6|4|5|color|red>|<table|<row|<cell|运用相似矩阵的性质,有>|<cell|>|<cell|>|<cell|<math|B=P<rsup|-1>A<rsup|\<ast\>>P>>|<cell|>>|<row|<cell|矩阵>|<cell|A>|<cell|A<rsup|*>>|<cell|B>|<cell|B+kE>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|特征值>|<cell|\<lambda\>>|<cell|\|A\|\<lambda\><rsup|-1>>|<cell|\|A\|\<lambda\><rsup|-1>>|<cell|\|A\|\<lambda\><rsup|-1>+k>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|对应特征向量>|<cell|\<alpha\>>|<cell|\<alpha\>>|<cell|P<rsup|-1>\<alpha\>>|<cell|P<rsup|-1>\<alpha\>>>>>>
+
+  \;
+
+  \;
+
+  <subsubsection|实对称矩阵必可对角化>
+
+  <\equation*>
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|注意:特征值相同是<with|color|red|任意矩阵>相似的必要条件,但只当矩阵实对称时,才是充分条件。即:>>>|<row|<cell|>|<cell|矩*阵*相*似\<Rightarrow\><text|特征值相同>>>|<row|<cell|>|<cell|<around*|\<nobracket\>|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|<text|特征值相同>>>|<row|<cell|>>|<row|<cell|<text|实对称矩阵>>>>>>|}>\<Rightarrow\><text|矩阵相似>.>>>>
+    </aligned>
+  </equation*>
+
+  <math|A与B<around*|(|实对称矩阵|)> 相似的充分必要条件is A和B的特征值相同\<rightarrow\><with|color|red|<around*|\||\<lambda\><rsub|b<rsub|n>>E-A|\|>=O> >
+
+  <subsection|<math|A<around*|[|x<rsub|1>,x<rsub|2>|]>=<around*|[|b<rsub|1>,b<rsub|2>|]>>>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|[<text|分析】求矩阵方程>A<around|[|<math-bf|x><rsub|1>,<math-bf|x><rsub|2>|]>=<around|[|<math-bf|b><rsub|1>,<math-bf|b><rsub|2>|]>,<text|即求2个线性方程组的解:>A<math-bf|x><rsub|1>=<math-bf|b><rsub|1>,A<math-bf|x><rsub|2>=<math-bf|b><rsub|2>.>>|<row|<cell|>|<cell|由*题*设,这*两*个*方*程*组*的*通*解*为>>|<row|<cell|>|<cell|k<rsub|1>*\<b-xi\>+\<b-eta\><rsub|1>,>>|<row|<cell|>|<cell|k<rsub|2>*\<b-xi\>+\<b-eta\><rsub|2>,>>|<row|<cell|>|<cell|k<rsub|1>,k<rsub|2><text|为任意常数。>>>|<row|<cell|>|<cell|<text|则所求矩阵 >X=<around*|[|<tabular*|<tformat|<table|<row|<cell|k<rsub|1>*\<xi\>+<with|math-font-family|bf|\<eta\>><rsub|1>,k<rsub|2>*\<xi\>+<with|math-font-family|bf|\<eta\>><rsub|2>>>>>>|]>>>>>
+  </aligned>>
+
+  <math|[<text|2014年真题]设>A=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|-2>|<cell|3>|<cell|-4>>|<row|<cell|0>|<cell|1>|<cell|-1>|<cell|1>>|<row|<cell|1>|<cell|2>|<cell|0>|<cell|-3>>>>>|]>,E*<text|为三阶单位矩阵。求满足>A*B=E*<text|的所有矩阵 >B>.
+
+  <math|<around|[|A\|E|]>=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|-2>|<cell|3>|<cell|-4>|<cell|\<vdots\>>|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|-1>|<cell|1>|<cell|\<vdots\>>|<cell|0>|<cell|1>|<cell|0>>|<row|<cell|1>|<cell|2>|<cell|0>|<cell|-3>|<cell|\<vdots\>>|<cell|0>|<cell|0>|<cell|1>>>>>|]>><math|<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|-2>|<cell|3>|<cell|-4>|<cell|\<vdots\>>|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|-1>|<cell|1>|<cell|\<vdots\>>|<cell|0>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|4>|<cell|-3>|<cell|1>|<cell|\<vdots\>>|<cell|-1>|<cell|0>|<cell|1>>>>>|]>>
+
+  <math|<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|-2>|<cell|3>|<cell|-4>|<cell|\<vdots\>>|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|-1>|<cell|1>|<cell|\<vdots\>>|<cell|0>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|1>|<cell|-3>|<cell|\<vdots\>>|<cell|-1>|<cell|-4>|<cell|1>>>>>|]>>
+
+  <math|<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|-2>|<cell|0>|<cell|5>|<cell|\<vdots\>>|<cell|4>|<cell|12>|<cell|-3>>|<row|<cell|0>|<cell|1>|<cell|0>|<cell|-2>|<cell|\<vdots\>>|<cell|-1>|<cell|-3>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|1>|<cell|-3>|<cell|\<vdots\>>|<cell|-1>|<cell|-4>|<cell|1>>>>>|]>>
+
+  <with|color|red|先求<math|A<math-bf|x>=<with|math-font-family|bf|0>> 的基础解系： 令<math|x<rsub|4>=1>,>解得<math|x<rsub|3>=3,x<rsub|2>=2,x<rsub|1>=-1>. 则基础解系为<math|\<xi\>=<around|(|-1,2,3,1|)><rsup|\<top\>>>.
+
+  <math|<\aligned>
+    <tformat|<cwith|1|-1|1|1|cell-width|1>|<cwith|1|-1|1|1|cell-hmode|exact>|<table|<row|<cell|>|<cell|<text|再分别求三个方程组的特解:>>>|<row|<cell|>|<cell|<with|color|red|<text|令 >x<rsub|4>=0.<text|由增广矩阵的第一列得>>>>|<row|<cell|>|<cell|x<rsub|3>-3*x<rsub|4>=-1\<Rightarrow\>x<rsub|3>=-1,>>|<row|<cell|>|<cell|x<rsub|2>-2*x<rsub|4>=-1\<Rightarrow\>x<rsub|2>=-1,>>|<row|<cell|>|<cell|x<rsub|1>-2*x<rsub|2>+5*x<rsub|4>=4\<Rightarrow\>x<rsub|1>=4+2*x<rsub|2>=2.>>|<row|<cell|>|<cell|<text|则第一个方程组的特解为 ><around|(|2,-1,-1,0|)><rsup|\<top\>>.>>|<row|<cell|>|<cell|<text|同理,第二个方程组的特解为 ><around|(|6,-3,-4,0|)><rsup|\<top\>>,<text|第三个方程组的特解为 ><around|(|-1,1,1,0|)><rsup|\<top\>>.>>>>
+  </aligned>>
+
+  <math|<\aligned>
+    <tformat|<cwith|1|-1|1|1|cell-width|1>|<cwith|1|-1|1|1|cell-hmode|exact>|<table|<row|<cell|>|<cell|<text|由此得三个方程组的通解>>>|<row|<cell|>|<cell|<around|(|2,-1,-1,0|)><rsup|\<top\>>+k<rsub|1>*\<xi\>>>|<row|<cell|>|<cell|<around|(|6,-3,-4,0|)><rsup|\<top\>>+k<rsub|2>*\<xi\>>>|<row|<cell|>|<cell|<around|(|-1,1,1,0|)><rsup|\<top\>>+k<rsub|3>*\<xi\>>>|<row|<cell|>|<cell|<text|注意 >k<rsub|1>,k<rsub|2>,k<rsub|3>*<text|为三个不同的任意常数。常见错误为 >k<rsub|1>=k<rsub|2>=k<rsub|3>=k.>>|<row|<cell|>|<cell|<text|故所求矩阵为 >B=<around*|[|<tabular*|<tformat|<table|<row|<cell|2-k<rsub|1>>|<cell|6-k<rsub|2>>|<cell|-1-k<rsub|3>>>|<row|<cell|-1+2*k<rsub|1>>|<cell|-3+2*k<rsub|2>>|<cell|1+2*k<rsub|3>>>|<row|<cell|-1+3*k<rsub|1>>|<cell|-4+3*k<rsub|2>>|<cell|1+3*k<rsub|3>>>|<row|<cell|k<rsub|1>>|<cell|k<rsub|2>>|<cell|k<rsub|3>>>>>>|]>,k<rsub|1>,k<rsub|2>,k<rsub|3><text|为任意常数。>>>>>
+  </aligned>>
+
+  <\example>
+    \;
+
+    <\equation*>
+      <text|设>\<alpha\>=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|3>>|<row|<cell|1>>>>>|]>,\<beta\>=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|1>>|<row|<cell|0>>>>>|]>,\<gamma\>=<around*|[|<tabular*|<tformat|<table|<row|<cell|0>>|<row|<cell|0>>|<row|<cell|64>>>>>|]>,A=\<alpha\>*\<beta\><rsup|\<top\>>,B=\<beta\><rsup|\<top\>>*\<alpha\>*<text|其中>\<beta\><rsup|\<top\>>*<text|是>\<beta\>*<text|的转置,求解方程>A<rsup|3><math-bf|x>+A<rsup|2>*B<math-bf|x>=8*B<rsup|2><math-bf|x>+\<b-gamma\>.
+    </equation*>
+
+    代入原方程得，16 <math|A<math-bf|x>+16*A<math-bf|x>=8\<cdot\>16<math-bf|x>+\<b-gamma\>> 即 32 <math|<around|(|A-4*E|)><text|<with|font-series|bold|x>>=\<b-gamma\>>.
+
+    <math|<text|解线性方程组:><around|(|A-4*E|)><math-bf|x>=<frac|\<gamma\>|32>.<text|对增广矩阵用高斯消元法:>>
+  </example>
+
+  <section|行列变换>
+
+  \;
+
+  ——————————————————————————————————
+
+  <\with|par-mode|left>
+    因为<math|B>可以由<math|A>经行变换得到，<math|B=(>矩阵左乘<math|A)>
+
+    已知<math|A> 为<math|n*<around*|(|n\<geq\>2|)>>阶可逆矩阵，为书写简洁，不妨设<math|A> 为三阶矩阵。
+
+    根据题设：将<math|A>的第 1 行加到第 2 行得矩阵<math|B>,则<math|B=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|1>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|1>>>>>|]>*A=E<rsub|21><around|(|1|)>*A>.
+
+    因此 <math|B<rsup|-1>=A<rsup|-1>*E<rsub|21><around|(|1|)><rsup|-1>>,其中<math|E<rsub|2>*1<around|(|1|)>> 为 倍加初等矩阵。
+
+    利用倍加初等矩阵的逆矩阵，有<math|E<rsub|2>*1<around|(|1|)><rsup|-1>=E<rsub|21>*<around|(|-1|)>>,则<math|B<rsup|->*1=A<rsup|-1>*E<rsub|21>*<around|(|-1|)>>.
+
+    根据定义，有<math|A<rsup|->*1=<frac|A<rsup|\<ast\>>|<around|\||A|\|>>,B<rsup|-1>=<frac|B<rsup|\<ast\>>|<around|\||B|\|>>>,从而<math|<frac|B<rsup|\<ast\>>|<around|\||B|\|>>=<frac|A<rsup|\<ast\>>|<around|\||A|\|>>*E<rsub|21>*<around|(|-1|)>>.
+
+    <\with|par-mode|right>
+      <\with|par-mode|left>
+        因为将一行 (或列) 的<with|color|red|<math|k>倍加>到另一行 (或列),行列式的值不变，则<math|<around|\||B|\|>=<around|\||A|\|>>.
+      </with>
+    </with>
+
+    <\with|par-mode|right>
+      <\with|par-mode|left>
+        故<math|B<rsup|\<ast\>>=A<rsup|\<ast\>>*E<rsub|21>*<around|(|-1|)>>,即将<math|A<rsup|\<ast\>>>的第 2 列从第 1 列中减去得<math|B<rsup|\<ast\>>>,答案选 D
+      </with>
+    </with>
+
+    \;
+  </with>
+
+  [分析]因为所求行列式中含 <math|\<beta\><rsub|1>+\<beta\><rsub|2>>,想到<math|<with|color|red|<around|\||\<alpha\><rsub|3>,\<alpha\><rsub|2>,\<alpha\><rsub|1>,\<beta\><rsub|1>+\<beta\><rsub|2>|\|>=\|\<alpha\><rsub|3>,\<alpha\><rsub|2>,\<alpha\><rsub|1>,\<beta\><rsub|1>\|+\|\<alpha\><rsub|3>,\<alpha\><rsub|2>,\<alpha\><rsub|1>,\<beta\><rsub|2>\|>>. 试着将题设转化成等式右边的两项。
+
+  <\example>
+    \;
+
+    <\equation*>
+      <\aligned>
+        <tformat|<table|<row|<cell|>|<cell|<text|[2021年真题]设>A,B*<text|为 >n<text|阶实矩阵,下列不成立的是>>>|<row|<cell|>|<cell|<text|A. >r<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|O>>|<row|<cell|O>|<cell|A<rsup|\<top\>>*A>>>>>|]>=2*r<around|(|A|)>>>|<row|<cell|>|<cell|<text|B. >r<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|A*B>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]>=2*r<around|(|A|)>>>|<row|<cell|>|<cell|\<bbb-C\>.*r<around*|\<lfloor\>|<tabular*|<tformat|<table|<row|<cell|A>|<cell|B*A>>|<row|<cell|O>|<cell|A*A<rsup|\<top\>>>>>>>|\<rfloor\>>=2*r<around|(|A|)>>>|<row|<cell|>|<cell|<text|D. >r<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|O>>|<row|<cell|B*A>|<cell|A<rsup|\<top\>>>>>>>|]>=2*r<around|(|A|)>>>>>
+      </aligned>
+    </equation*>
+
+    <math|<\aligned>
+      <tformat|<cwith|1|-1|1|1|cell-width|1>|<cwith|1|-1|1|1|cell-hmode|exact>|<table|<row|<cell|>|<cell|选*项*D:>>|<row|<cell|>|<cell|<text|广义高斯消元:>>>|<row|<cell|>|<cell|B*A*<text|为 >A<text|的行变换(左乘行变换),故将分块矩阵行变换。>>>|<row|<cell|>|<cell|<text|将行><around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|O>>>>>|]>*<text|的><around*|(|-B|)><text|倍,行><around*|[|<tabular*|<tformat|<table|<row|<cell|-B*A>|<cell|O>>>>>|]>,<text|加在行><around*|[|<tabular*|<tformat|<table|<row|<cell|B*A>|<cell|A<rsup|\<top\>>>>>>>|]><text|上,得到>>>|<row|<cell|>|<cell|r<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|A>|<cell|O>>|<row|<cell|B*A>|<cell|A<rsup|\<top\>>>>>>>|]>=r<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|A>|<cell|O>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]>=r<around|(|A|)>+r<around*|(|A<rsup|\<top\>>|)>=2*r<around|(|A|)>.>>>>
+    </aligned>>
+
+    <math|<\aligned>
+      <tformat|<cwith|1|-1|1|1|cell-width|1>|<cwith|1|-1|1|1|cell-hmode|exact>|<table|<row|<cell|>|<cell|<text|错误操作:>>>|<row|<cell|>|<cell|<text|将列><around*|[|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|O>>>>>|]>*<text|的><around|(|-B|)><text|倍加在 列><around*|[|<tabular*|<tformat|<table|<row|<cell|B*A>>|<row|<cell|A*A<rsup|\<top\>>>>>>>|]><text|上。>>>|<row|<cell|>|<cell|<text|将列变换写成完整的矩阵相乘形式,即看出错误所在:>>>|<row|<cell|>|<cell|<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|B*A>>|<row|<cell|O>|<cell|A*A<rsup|\<top\>>>>>>>|]><around*|[|<tabular*|<tformat|<table|<row|<cell|E>|<cell|-B>>|<row|<cell|O>|<cell|E>>>>>|]>=<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|-A*B+B*A>>|<row|<cell|O>|<cell|A*A<rsup|\<top\>>>>>>>|]>,<text|不能消去。>>>>>
+    </aligned>>
+
+    <math|<\aligned>
+      <tformat|<cwith|1|-1|1|1|cell-width|1>|<cwith|1|-1|1|1|cell-hmode|exact>|<table|<row|<cell|>|<cell|r<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|O>>|<row|<cell|O>|<cell|A<rsup|\<top\>>*A>>>>>|]>=r<around|(|A|)>+r*<around*|(|A<rsup|\<top\>>*A|)>=2*r<around|(|A|)>,<text|故A正确。>>>|<row|<cell|>|<cell|选*项*B:>>|<row|<cell|>|<cell|<text|广义高斯消元:>>>|<row|<cell|>|<cell|A*B*<text|为 >A<text|的列变换(右乘列变换),故将分块矩阵列变换。>>>|<row|<cell|>|<cell|<text|将列><around*|[|<tabular*|<tformat|<table|<row|<cell|A>>|<row|<cell|O>>>>>|]>*<text|的>B<text|倍><around*|[|<tabular*|<tformat|<table|<row|<cell|A*B>>|<row|<cell|O>>>>>|]><text|,从列><around*|[|<tabular*|<tformat|<table|<row|<cell|A*B>>|<row|<cell|A<rsup|\<top\>>>>>>>|]><text|中减去,得到>>>|<row|<cell|>|<cell|r<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|A>|<cell|A*B>>|<row|<cell|>|<cell|>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]>=r<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|2|2|cell-rborder|0ln>|<table|<row|<cell|A>|<cell|O>>|<row|<cell|>|<cell|>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]>=r<around|(|A|)>+r<around*|(|A<rsup|\<top\>>|)>=2*r<around|(|A|)>,<text|故B正确。>>>|<row|<cell|>|<cell|注:写*成*矩*阵*相*乘*形*式,>>|<row|<cell|>|<cell|<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|A*B>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]><around*|[|<tabular*|<tformat|<table|<row|<cell|E>|<cell|-B>>|<row|<cell|O>|<cell|E>>>>>|]>=<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|-A*B+A*B>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]>=<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|O>>|<row|<cell|O>|<cell|A<rsup|\<top\>>>>>>>|]>.>>>>
+    </aligned>>
+  </example>
+
+  <section|方程组同解>
+
+  <subsection|x1=x2>
+
+  <\example>
+    \;
+
+    已知线性方程组的通解为<math|k<rsub|1><around|(|1,-3,1,0|)><rsup|\<top\>>+k<rsub|2><around|(|0,-1,0,1|)><rsup|\<top\>>>,其中<math|k<rsub|1>,k<rsub|2>> 为任意常数，求该方程组满足 <math|2*x<rsub|1>=x<rsub|2>> 的全部解。\ 
+
+    A. <math|k<rsub|1><around|(|1,2,1,-5|)><rsup|\<top\>>+k<rsub|2><around|(|1,2,1,-2|)><rsup|\<top\>>>,其中<math|k<rsub|1>,k<rsub|2>> 为任意常数
+
+    B. <math|<around|(|1,2,1,-5|)><rsup|\<top\>>>
+
+    C. <math|k<around|(|1,2,1,-5|)><rsup|\<top\>>>,其中<math|k> 为任意常数
+
+    D. <math|k<around|(|1,2,1,-2|)><rsup|\<top\>>>,其中<math|k> 为任意常数
+
+    [分析]即求原方程组与<math|2*x<rsub|1>=x<rsub|2>>的公共解。原方程组未给出，不能联立方程。则将已知通解代入<math|2*x<rsub|1>=x<rsub|2>>中。 [解答] 从 通 解 可 得 , <math|x<rsub|1>=k<rsub|1>,x<rsub|2>=-3*k<rsub|1>-k<rsub|2>>. 若 2<math|x<rsub|1>=x<rsub|2>>,则 <math|2*k<rsub|1>=-3*k<rsub|1>-k<rsub|2>\<Rightarrow\>k<rsub|2>=-5*k<rsub|1>>. 代 入 通 解 , 得 <math|x=k<rsub|1><around|(|1,-3,1,0|)><rsup|\<top\>>-5*k<rsub|1><around|(|0,-1,0,1|)><rsup|\<top\>>=k<rsub|1><around|(|1,2,1,-5|)><rsup|\<top\>>>. 则通解为<math|k<around*|(|1,2,1,-5|)><rsup|\<top\>>>,其中<math|k> 为任意常数。
+  </example>
+
+  \;
+
+  [2005年真题] 已知齐次线性方程组
+
+  <math|<around|(|1|)><choice|<tformat|<table|<row|<cell|x<rsub|1>+2*x<rsub|2>+3*x<rsub|3>=0>>|<row|<cell|2*x<rsub|1>+3*x<rsub|2>+5*x<rsub|3>=0,<text|和><around|(|11|)><choice|<tformat|<table|<row|<cell|x<rsub|1>+b*x<rsub|2>+c*x<rsub|3>=0>>|<row|<cell|2*x<rsub|1>+b<rsup|2>*x<rsub|2>+<around|(|c+1|)>*x<rsub|3>=0>>>>>>>>>>>同解，
+
+  则<math|a+b+c=>
+
+  <math|A.*3> <math|B.*5> C. 3或 5 D. 2或 5
+
+  [分析]方程组同解，则 1.线性无关解的个数相同<math|\<Rightarrow\>>系数矩阵的秩相同；2.基础解系相同 [解答] 令方程组(l)的系数矩阵为<math|A=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|2>|<cell|3>>|<row|<cell|2>|<cell|3>|<cell|5>>|<row|<cell|1>|<cell|1>|<cell|a>>>>>|]>>.
+
+  令方程组(II)的系数矩阵为<math|B=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|b>|<cell|c>>|<row|<cell|2>|<cell|b<rsup|2>>|<cell|c+1>>>>>|]>>中十印如同知则的<math|<around|(|x|)>=<around|(|x,y|)>=<around|(|x,y|)>>
+
+  由方程组同解，则<math|n-r<around|(|B|)>=>方程 (II)线性无关解的个数=方程 (II)线性无关解的个数<math|=n-r<around|(|A|)>>,即<math|r<around|(|B|)>=r<around|(|A|)>>. 因 为 <math|r<around|(|B|)>\<leq\>2>,则 <math|r<around|(|A|)>\<leq\>2>,即 <math|<around|\||A|\|>=0>,有\ 
+
+  <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|2>|<cell|3>>|<row|<cell|2>|<cell|3>|<cell|5>>|<row|<cell|1>|<cell|1>|<cell|a>>>>>=<around*|\||<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|2>|<cell|3>>|<row|<cell|0>|<cell|-1>|<cell|-1>>|<row|<cell|0>|<cell|0>|<cell|a-2>>>>>|\|>=2-a=0>,则<math|a=2>.
+
+  代入<math|a=2>,则可以求方程组(1)的解。 对<math|A> 高斯消元：<math|<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|2>|<cell|3>>|<row|<cell|2>|<cell|3>|<cell|5>>|<row|<cell|1>|<cell|1>|<cell|2>>>>>|]>\<to\><around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|0>|<cell|1>>|<row|<cell|0>|<cell|1>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|0>>>>>|]>> 则令<math|x<rsub|1>,x<rsub|2>>为独立未知量，<math|x<rsub|3>>为自由未知量。
+
+  令<math|x<rsub|3>=1>,解得<math|x<rsub|2>=-1,x<rsub|1>=-1>.
+
+  则方程组(l)的通解是<math|k<around|(|-1,-1,1|)><rsup|\<top\>>,k> 为任意常数。
+
+  以下由方程组(II)的通解也是<math|k<around|(|-1,-1,1|)><rsup|\<top\>>>,求出<math|b> 和<math|c>.
+
+  注意有两部分：
+
+  <math|1.*<around|(|-1,-1,1|)><rsup|<math-up|T>>>是方程组 (II)的解；2.方程组 (II) 只有 1 个线性无关解，即<math|r<around|(|B|)>=2>.
+
+  第1部分：
+
+  因为<math|<around*|(|-1,-1,1|)><rsup|\<top\>>>应当是方程组 (II)的解，代入则得到 <math|b,c> 的方程组： <math|<around*|{|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|-1-b+c=0>>|<row|<cell|-2-b<rsup|2>+c+1=0>>>>>|\<nobracket\>>>,解得<math|b=1,c=2> 或<math|b=0,c=1>.
+
+  第2部分：
+
+  情况一：当<math|b=0,c=1>,方程组(ll)为<math|<choice|<tformat|<table|<row|<cell|x<rsub|1>+x<rsub|3>=0>>|<row|<cell|2*x<rsub|1>+2*x<rsub|3>=0>>>>>> 有 <math|r<around|(|B|)>=1>,从而(I)与(II)不同解，故<math|b=0,c=1> 应舍去。情况二：当<math|b=1,c=2>时，方程组<math|<around*|(|<around*|\||<math-up|l>|)><text|为><choice|<tformat|<table|<row|<cell|x<rsub|1>+x<rsub|2>+2*x<rsub|3>=0>>|<row|<cell|2*x<rsub|1>+x<rsub|2>+3*x<rsub|3>=0>>>>>|\<nobracket\>>> 有<math|r<around|(|B|)>=2>,从而方程组 (II) 只有 1 个线性无关解，即通解是<math|k<around|(|-1,-1,1|)><rsup|\<top\>>,k>为任意常数，(I) 与 (II) 同解。
+
+  故<math|a+b+c=2+1+2=5>.选B
+
+  <\example>
+    \;
+
+    <\math>
+      <\aligned>
+        <tformat|<table|<row|<cell|>|<cell|<text|设四元齐次线性方程组()的基础解系为 >\<beta\><rsub|1>=<around|(|0,0,1,0|)><rsup|\<top\>>,\<beta\><rsub|2>=<around|(|-1,1,0,1|)><rsup|\<top\>>,<text|而另一四元齐次线性方程组 (II) 的基础解系为>>>|<row|<cell|>|<cell|\<alpha\><rsub|1>=<around|(|0,1,1,0|)><rsup|\<top\>>,\<alpha\><rsub|2>=<around|(|-1,-1,0,1|)><rsup|\<top\>>.>>|<row|<cell|>|<cell|<text|则方程组(<name|<samp|>>)与(II)的公共解为>>>>>
+      </aligned>
+
+      \;
+
+      [分析]已知两个方程组的通解，求公共解。则令通解相等，解关于常数<math|k<rsub|1>,k<rsub|2>,l<rsub|1>,l<rsub|2>> 的新方程组。
+
+      [解答]
+
+      设<math|\<eta\>>是方程组(I)与(II)的非零公共解，则
+
+      <math|\<eta\>=k<rsub|1>*\<beta\><rsub|1>+k<rsub|2>*\<beta\><rsub|2>> = <math|l<rsub|1>*\<alpha\><rsub|1>> + <math|l<rsub|2>> <math|\<alpha\><rsub|2>> .
+
+      那么<math|k<rsub|1>*\<beta\><rsub|1>+k<rsub|2>*\<beta\><rsub|2>-l<rsub|1>*\<alpha\><rsub|1>-l<rsub|2>*\<alpha\><rsub|2>=0>
+
+      再代入题设给出的<math|\<beta\><rsub|1>,\<beta\><rsub|2>,\<alpha\><rsub|1>,\<alpha\><rsub|2>>,由此得齐次方程组 (III)
+
+      <math|<around*|{|-k<rsub|2>+l<rsub|2>=0|\<nobracket\>>>
+
+      <math|k<rsub|2>-l<rsub|1>+l<rsub|2>=0<rsub|>对*系*数*矩*阵*高*斯*消*元>
+
+      <math|k<rsub|1>-l<rsub|1>=0>
+
+      k<rsub|2>-l<rsub|1>=0
+
+      \;
+
+      <\equation*>
+        <\aligned>
+          <tformat|<table|<row|<cell|>|<cell|A=<around*|[|<tabular*|<tformat|<table|<row|<cell|0>|<cell|-1>|<cell|0>|<cell|1>>|<row|<cell|0>|<cell|1>|<cell|-1>|<cell|1>>|<row|<cell|1>|<cell|0>|<cell|-1>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|0>|<cell|-1>>>>>|]>\<to\><around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|-1>|<cell|0>>|<row|<cell|0>|<cell|-1>|<cell|0>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|-1>|<cell|2>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|0>>>>>|]>>>>>
+        </aligned>
+      </equation*>
+
+      <math|则*令>k<rsub|1>, k<rsub|2>, l<rsub|1><math|为*独*立*未*知*量>, l<rsub|2><math|为*自*由*未*知*量*。*令>l<rsub|2>= 1<math|,则>l<rsub|1>= 2, k<rsub|1>= 2, k<rsub|2>= 1.
+
+      <math|即*通*解*为>h( 2, 1, 2, 1) <rsup|\<top\>>, h<math|为*任*意*常*数*。*则>
+
+      <left|[><tabular*|<tformat|<table|<row|<cell|k<rsub|1>>>|<row|<cell|k<rsub|2>>>|<row|<cell|l<rsub|1>>>|<row|<cell|l<rsub|2>>>>>><right|]>=<left|[><tabular*|<tformat|<table|<row|<cell|2h>>|<row|<cell|h>>|<row|<cell|2h>>|<row|<cell|h>>>>><right|]>.<math|则*方*程*组*的*公*共*解*为>
+
+      \<eta\>=l<rsub|1>\<alpha\><rsub|1>+l<rsub|2>\<alpha\><rsub|2>=2h\<alpha\><rsub|1>+h\<alpha\><rsub|2>=h(2\<alpha\><rsub|1>+\<alpha\><rsub|2>)=h(-1,1,2,1)<rsup|\<top\>>,h<math|为*任*意*常*数*。>
+    </math>
+  </example>
+
+  <section|\|A\|>
+
+  [2013年真题]<math|A=<matrix|<tformat|<table|<row|<cell|a<rsub|i*j>>>>>>>是三阶非零矩阵，<math|<around|\||A|\|>>为<math|A>的行列式<math|A<rsub|i*j>>为<math|a<rsub|i>*j>的代数余子式，若<math|a<rsub|i>*j+A<rsub|i*j>=0> <math|<around|(|i,j=1,2,3|)>>,则 <math|<around|\||A|\|>=>
+
+  <math|a<rsub|ij>+A<rsub|ij>=O,a<rsub|ij>=-A<rsub|ij>,<around*|\||A|\|>=0,-1;A\<neq\>O;<around*|\||A|\|>=-1.>
+
+  <\example>
+    \;
+
+    <math|r<around*|(|A|)>=3,<around*|\||A|\|>=2,<around*|\||A<rsup|-1>-E|\|>=3,<around*|\||A-E|\|>=?>
+
+    <math|<around*|\||A-E|\|>=<around*|\||A|\|>*<around*|\||E-A<rsup|-1>|\|>=2*<around*|\||-1<around*|(|A<rsup|-1>-E|)>|\|>=2\<times\><around*|(|-1|)><rsup|3>*<around*|\||A<rsup|-1>-E|\|>=-6>
+  </example>
+
+  <\example>
+    \;
+
+    <\equation*>
+      <\aligned>
+        <tformat|<table|<row|<cell|>|<cell|<text|[2008年真题](本题请写出计算过程)已>>>|<row|<cell|>|<cell|A=<around*|[|<tabular*|<tformat|<table|<row|<cell|2*a>|<cell|1>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|a<rsup|2>>|<cell|2*a>|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|a<rsup|2>>|<cell|2*a>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|a<rsup|2>>|<cell|2*a>|<cell|1>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|a<rsup|2>>|<cell|2*a>>>>>|]>>>|<row|<cell|>|<cell|<text|则><around|\||A|\|>=>>>>
+      </aligned>
+    </equation*>
+
+    A. <math|n> <math|a<rsup|n>> 3. <math|<around*|(|n+1|)>> <math|a<rsup|n>> D. <math|<around|(|n+1|)>*u> C. <math|<frac|a<rsup|n>+a<rsup|2*n>|2>> <math|=<around|(|2-1|)><rsup|n>> D. <math|<around|(|2*a|)><rsup|n>-<around|(|n-1|)>*a<rsup|2*<around|(|n-1|)>>>
+
+    <\math>
+      U<rsub|n>=2a*U<rsub|n-1>+<around*|(|-1|)><rsup|n+n-1>*a<rsup|2>\<times\>1\<times\>U<rsub|n-2>
+
+      U<rsub|n>=2*a*U<rsub|n-1>-a<rsup|2>*U<rsub|n-2>
+
+      x<rsup|2>-2 a x+a<rsup|2>=0
+
+      U<rsub|n>=<around*|(|c<rsub|1>*n+c<rsub|2>|)>a<rsup|n>
+    </math>
+
+    代入<math|U<rsub|1>,U<rsub|2>,\<rightarrow\>c<rsub|1>,c<rsub|2>>\ 
+  </example>
+
+  <subsection|克拉默法则>
+
+  <\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|设 >n*<text|元线性方程组 >A<math-bf|x>=<math-bf|b>,<text|其中>>>|<row|<cell|>|<cell|A=<around*|[|<tabular*|<tformat|<table|<row|<cell|4>|<cell|1>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|4>|<cell|4>|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|4>|<cell|4>|<cell|1>|<cell|>|<cell|>>|<row|<cell|>|<cell|>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|4>|<cell|4>|<cell|1>>|<row|<cell|>|<cell|>|<cell|>|<cell|>|<cell|4>|<cell|4>>>>>|]>,<math-bf|x>=<around*|[|<tabular*|<tformat|<table|<row|<cell|x<rsub|1>>>|<row|<cell|x<rsub|2>>>|<row|<cell|\<vdots\>>>|<row|<cell|x<rsub|n>>>>>>|]>,<math-bf|b>=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|0>>|<row|<cell|\<vdots\>>>|<row|<cell|0>>>>>|]>>>|<row|<cell|>|<cell|<text|已知行列式><around|\||A|\|>=<around|(|n+1|)>*2<rsup|n>,<text|则>>>|<row|<cell|>|<cell|<text|A.方程组有唯一解,且 >x<rsub|1>=<frac|n|2*<around|(|n+1|)>>>>|<row|<cell|>|<cell|<text|B.方程组有一解,且 >x<rsub|1>=<frac|n|n+1>>>|<row|<cell|>|<cell|<text|C.方程组有无穷解,且 ><math-bf|x>=k<around|(|1,0,0,...,0|)><rsup|\<top\>>,<text|其中 >k<text|为任意常数>>>|<row|<cell|>|<cell|<text|D.方程组有无穷解,且 ><math-bf|x>=k<around|(|0,1,0,...,0|)><rsup|\<top\>>,<text|其中 >k<text|为任意常数>>>>>
+  </aligned>
+
+  <\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|由克拉默法则,><around|\||A|\|>\<neq\>0*<text|时,>n<text|元线性方程组有唯一解。>>>|<row|<cell|>|<cell|<text|由题这><around|\||A|\|>=<around|(|n+1|)>\<cdot\>2<rsup|n>,<text|故方程组有唯>-<text|解。>>>|<row|<cell|>|<cell|<text|又由ke拉默法则,将 >A<text|的第一列替换为 ><math-bf|b>,<text|有>>>|<row|<cell|>|<cell|<det|<tformat|<table|<row|<cell|1>|<cell|1>|<cell|>|<cell|>|<cell|>|<cell|>>|<row|<cell|0>|<cell|4>|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|0>|<cell|4>|<cell|4>|<cell|\<ddots\>>|<cell|>|<cell|>>|<row|<cell|\<vdots\>>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|>>|<row|<cell|0>|<cell|\<nospace\>>|<cell|>|<cell|4>|<cell|4>|<cell|1>>>>>>>|<row|<cell|>|<cell|x<rsub|1>=<frac|<around|\||a|\|>|<around|\||A|\|>>>>|<row|<cell|>|<cell|<text|令>n*<text|阶行列式 >D<rsub|n>=<around|\||A|\|>=<around|(|n+1|)>\<cdot\>2<rsup|n>,<text|则按第 >1<text|列展开>:>>|<row|<cell|>|<cell|<det|<tformat|<table|<row|<cell|1>|<cell|1>|<cell|>|<cell|>|<cell|>>|<row|<cell|0>|<cell|4>|<cell|1>|<cell|>|<cell|>>|<row|<cell|0>|<cell|4>|<cell|4>|<cell|\<ddots\>>|<cell|>>|<row|<cell|\<vdots\>>|<cell|>|<cell|\<ddots\>>|<cell|\<ddots\>>|<cell|1>>|<row|<cell|0>|<cell|>|<cell|>|<cell|4>|<cell|4>>>>>=1\<cdot\>D<rsub|n-1>=n\<cdot\>2<rsup|n-1>.>>>>
+  </aligned>
+
+  则x<rsub|1>=<frac|n\<cdot\>2<rsup|n-1>|(n+1)\<cdot\>2<rsup|n>>=<frac|n|2(n+1)>
+
+  \;
+
+  克拉默法则
+
+  <\ornamented>
+    <math|A<math-bf|x>=<with|math-font-family|bf|0>>有非零解，根据克拉默法则，有<math|<around|\||A|\|>=0> 由<math|A<rsup|\<ast\>>*A=<around|\||A|\|>*E>,及<math|<around|\||A|\|>=0>,有<math|A<rsup|\<ast\>>*A=O>.则<math|A> 的列向量全是<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>> 的解。
+  </ornamented>
+
+  \;
+
+  设齐次线性方程组 <math|A<math-bf|x>=<with|math-font-family|bf|0>>. 已知 <math|<around|(|1,1,\<cdots\>,1|)><rsup|\<top\>>> 是方程组的解, <math|A<rsub|i*j>> 是 <math|A> 中元素 <math|a<rsub|i*j>> 的代数余子式，令 <math|\<b-alpha\><rsub|i>=<around*|[|A<rsub|i*1>,A<rsub|i*2>,\<cdots\>*A<rsub|i*n>|]><rsup|\<top\>>> <math|<around|(|i=1,2,\<cdots\>,n|)>> ，则\ 
+
+  A. <math|\<b-alpha\><rsub|i><around|(|i=1,2,\<cdots\>,n|)>> 是 <math|A<math-bf|x>=<with|math-font-family|bf|0>> 的一个基础解系\ 
+
+  B. <math|\<b-alpha\><rsub|i><around|(|i=1,2,\<cdots\>,n|)>> 是 <math|A<math-bf|x>=<with|math-font-family|bf|0>> 的解向量，并两两线性相关\ 
+
+  C. <math|\<b-alpha\><rsub|i><around|(|i=1,2,\<cdots\>,n|)>> 都为零向量，故为 <math|A<math-bf|x>=<with|math-font-family|bf|0>> 的解向量\ 
+
+  D. <math|\<b-alpha\><rsub|i><around|(|i=1,2,\<cdots\>,n|)>> 包含 <math|A<math-bf|x>=<with|math-font-family|bf|0>> 的解向量，但不能表出所有解向量
+
+  [分析]由<math|A<rsub|i*j>>是<math|A>中元素<math|\<alpha\><rsub|i*j>>的代数余子式，则<math|<around|[|\<b-alpha\><rsub|1>,\<b-alpha\><rsub|2>,<cdotp><cdotp><cdotp>,\<b-alpha\><rsub|n>|]>>为 伴随矩阵<math|A<rsup|\<ast\>>>. [解答] 已知<math|<around*|(|1,1,\<cdots\>,1|)><rsup|<math-ss|T>>>是方程组的解，根据克拉默法则，有<math|<around*|\||A|\|>=0>. 由<math|A*A<rsup|\<ast\>>=<around|\||A|\|>*E>,且<math|<around|\||A|\|>=0>,则<math|A*A<rsup|\<ast\>>=O>,即<math|A<rsup|\<ast\>>>的列向量为<math|A<math-bf|x>=<with|math-font-family|bf|0>>的解向量。 因为<math|<around|\||A|\|>=0>,则<math|r<around|(|A|)>\<less\>n>,有<math|r<around|(|A<rsup|\<ast\>>|)>\<leq\>1>,分两种情况： 若 <math|r<around|(|A<rsup|\<ast\>>|)>=0>,则 <math|\<b-alpha\><rsub|i><around*|(|i=1,2,\<cdots\>,n|)>>都为零向量，显然两两线性相关。 若<math|r<around*|(|A<rsup|\<ast\>>|)>=1>,则<math|A<rsup|\<ast\>>>的列向量的极大线性无关组只有 1 个向量，则两两线性相关。
+
+  <\example>
+    \;
+
+    设<math|A=<around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>|)>> 是三阶矩阵，<math|A<rsup|\<ast\>>>为<math|A> 的伴随矩阵，若 <math|<around|(|0,2,1|)><rsup|<math-up|T>>>是方程组<math|A<math-bf|x>=<with|math-font-family|bf|0>>的一个基础解系，则<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>>的
+
+    基础解系可为( <math|a<rsub|1>,a<rsub|2>>) (a1,a3)
+  </example>
+
+  <\example>
+    \;
+
+    [2011年真题]设<math|A=<around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>|)>> 是四阶矩阵，<math|A<rsup|\<ast\>>>为<math|A> 的伴随矩阵，若 <math|<around|(|1,0,1,0|)><rsup|<math-ss|T>>> 是方程组 <math|A<math-bf|x>=<with|math-font-family|bf|0>> 的一个基础解系，则
+
+    <math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>>的基础解系可为
+
+    <math|A>. <math|\<alpha\><rsub|1>,\<alpha\><rsub|3>> <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|<with|math-font-family|rm|B.>>|<cell|\<alpha\><rsub|1>,\<alpha\><rsub|2>>>>>>> <math|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|<with|math-font-family|rm|C.<nbsp>>\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>>>>>>> <math|\<cal-D\>>. <math|\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>>
+
+    用秩来决定线性无关解的个数： 因为<math|A<math-bf|x>=<with|math-font-family|bf|0>>只有 1 个线性无关的解，即<math|n-r<around|(|A|)>=1,n=4>,从而<math|r<around|(|A|)>=3>. 由<math|r<around|(|A|)>=3=n-1>,则<math|r<around|(|A<rsup|\<ast\>>|)>=1>. 有<math|n-r<around|(|A<rsup|\<ast\>>|)>=4-1=3>,故<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>> 的基础解系中有 3 个线性无关的解向量。 用<math|A*B=O>来得到解向量： <math|由*A<math-bf|x>=<with|math-font-family|bf|0>> 有非零解，则<math|<around|\||A|\|>=0>. 由<math|A<rsup|\<ast\>>*A=<around|\||A|\|>*E>,及<math|<around|\||A|\|>=0>,有<math|A<rsup|\<ast\>>*A=O>.则<math|A>的列向量全是<math|A<rsup|\<ast\>><math-bf|x>=<with|math-font-family|bf|0>> 的解。 而秩<math|r<around|(|A|)>=3>,故<math|A>的列向量中必有 3 个线性无关。\ 
+
+    <math|<\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|需找到这 3 个线性无关的列向量：>>>|<row|<cell|>|<cell|<text|由 >A<around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|0>>|<row|<cell|1>>|<row|<cell|0>>>>>|]>=0,<text|即><around|(|\<alpha\><rsub|1>,\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4>|)><around*|[|<tabular*|<tformat|<table|<row|<cell|1>>|<row|<cell|0>>|<row|<cell|1>>|<row|<cell|0>>>>>|]>=0,<text|则 >\<alpha\><rsub|1>+\<alpha\><rsub|3>=0,<text|即 >\<alpha\><rsub|1>,\<alpha\><rsub|3><text|相关。>>>|<row|<cell|>|<cell|<text|综上，>\<alpha\><rsub|2>,\<alpha\><rsub|3>,\<alpha\><rsub|4><text|无关。>>>>>
+    </aligned>>
+
+    选D.
+  </example>
+
+  <section|已知两个方程组的通解，求公共解。>
+
+  则令通解相等，解关于常数<math|k<rsub|1>,k<rsub|2>,l<rsub|1>,l<rsub|2>> 的新方程组
+
+  [解答]
+
+  设<math|\<eta\>>是方程组(l)与(ll)的非零公共解，则
+
+  <math|\<eta\>=k<rsub|1>*\<beta\><rsub|1>+k<rsub|2>*\<beta\><rsub|2>=l<rsub|1>*\<alpha\><rsub|1>+l<rsub|2>*\<alpha\><rsub|2>>.
+
+  那么<math|k<rsub|1>*\<beta\><rsub|1>+k<rsub|2>*\<beta\><rsub|2>-l<rsub|1>*\<alpha\><rsub|1>-l<rsub|2>*\<alpha\><rsub|2>=0> 再代入题设给出的<math|\<beta\><rsub|1>,\<beta\><rsub|2>,\<alpha\><rsub|1>,\<alpha\><rsub|2>>,由此得齐次方程组 (III) <math|<around*|(|-k<rsub|2>+l<rsub|2>=0|\<nobracket\>>> <math|<around*|\||k<rsub|2>-l<rsub|1>+l<rsub|2>=0|\<nobracket\>>>对系数矩阵高斯消元.\ 
+
+  <math|k<rsub|1>-l<rsub|1>=0>
+
+  <\equation*>
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<around*|(|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|k<rsub|2>-l<rsub|2>=0>>>>>|\<nobracket\>>>>|<row|<cell|>|<cell|A=<around*|[|<tabular*|<tformat|<table|<row|<cell|0>|<cell|-1>|<cell|0>|<cell|1>>|<row|<cell|0>|<cell|1>|<cell|-1>|<cell|1>>|<row|<cell|1>|<cell|0>|<cell|-1>|<cell|0>>|<row|<cell|0>|<cell|1>|<cell|0>|<cell|-1>>>>>|]>\<to\><around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|-1>|<cell|0>>|<row|<cell|0>|<cell|-1>|<cell|0>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|-1>|<cell|2>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|0>>>>>|]>>>|<row|<cell|>|<cell|<text|则令 >k<rsub|1>\<cdot\>k<rsub|2>\<cdot\>l<rsub|1>\<cdot\><text|为独立已知><space|1em>l<rsub|2>\<cdot\><text|为自由未知>>>>>
+    </aligned>
+  </equation*>
+
+  令<math|l<rsub|2>=1>,则<math|l<rsub|1>=2,k<rsub|1>=2,k<rsub|2>=1>. 即通解为<math|h*<around|(|2,1,2,1|)><rsup|\<top\>>,h>为任意常数。
+
+  则<math|<around*|[|<tabular*|<tformat|<table|<row|<cell|k<rsub|1>>>|<row|<cell|k<rsub|2>>>|<row|<cell|l<rsub|1>>>|<row|<cell|l<rsub|2>>>>>>|]>=<around*|[|<tabular*|<tformat|<table|<row|<cell|2*h>>|<row|<cell|h>>|<row|<cell|2*h>>|<row|<cell|h>>>>>|]>>.
+
+  则方程组的公共解为<math|\<eta\>=l<rsub|1>*\<alpha\><rsub|1>+l<rsub|2>*\<alpha\><rsub|2>=2*h*\<alpha\><rsub|1>+h*\<alpha\><rsub|2>=h*<around|(|2*\<alpha\><rsub|1>+\<alpha\><rsub|2>|)>=h*<around|(|-1,1,2,1|)><rsup|\<top\>>,h> 为任意常数。
+
+  <\example>
+    <math|A*x=O,B*x=O>同解
+  </example>
+
+  <\equation>
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|[2022年真题 设矩阵 >A,B*<text|均为 >n<text|阶方阵>,<text|若>A<math-bf|x>=<with|math-font-family|bf|0>*<text|与 >B<math-bf|x>=<with|math-font-family|bf|0><text|同解>,<text|则>>>|<row|<cell|>|<cell|<text|A.><matrix|<tformat|<table|<row|<cell|A>|<cell|O>>|<row|<cell|E>|<cell|B>>>>><math-bf|x>=<with|math-font-family|bf|0><text|仅有零解>>>|<row|<cell|>|<cell|<text|B.><matrix|<tformat|<table|<row|<cell|A*B>|<cell|B>>|<row|<cell|O>|<cell|A>>>>><math-bf|x>=<with|math-font-family|bf|0><text|仅有零解>>>|<row|<cell|>|<cell|<text|C.><matrix|<tformat|<table|<row|<cell|A>|<cell|B>>|<row|<cell|O>|<cell|B>>>>><math-bf|x>=<with|math-font-family|bf|0><text|与><matrix|<tformat|<table|<row|<cell|B>|<cell|A>>|<row|<cell|O>|<cell|A>>>>><math-bf|x>=<with|math-font-family|bf|0><text|同解>>>|<row|<cell|>|<cell|<text|D.><matrix|<tformat|<table|<row|<cell|A*B>|<cell|B>>|<row|<cell|O>|<cell|A>>>>><math-bf|x>=<with|math-font-family|bf|0><text|与><matrix|<tformat|<table|<row|<cell|B*A>|<cell|A>>|<row|<cell|O>|<cell|B>>>>><math-bf|x>=<with|math-font-family|bf|0><text|同解>>>>>
+    </aligned>
+  </equation>
+
+  <\equation>
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|【分析】题设为方程组,选项为分块矩阵方程,故将选项写成方程组:>>>|<row|<cell|>|<cell|<text|令 ><math-bf|x>=<matrix|<tformat|<table|<row|<cell|<math-bf|x><rsub|1>>>|<row|<cell|<math-bf|x><rsub|2>>>>>>,<text|其中 ><math-bf|x><rsub|1>,<math-bf|x><rsub|2><text|为 >n<text|维列向量,则>>>|<row|<cell|>|<cell|<around*|[|<tabular*|<tformat|<table|<row|<cell|A>|<cell|B>>|<row|<cell|C>|<cell|D>>>>>|]><math-bf|x>=<with|math-font-family|bf|0><text|等价于><around*|{|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|l>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|A<math-bf|x><rsub|1>+B<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>|<row|<cell|C<math-bf|x><rsub|1>+D<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>>>>|\<nobracket\>>.>>>>
+    </aligned>
+  </equation>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|选项等价于卜列2个方程组同解：>>>|<row|<cell|>|<cell|<text|方程组一：><choice|<tformat|<table|<row|<cell|A*B<math-bf|x><rsub|1>+B<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>|<row|<cell|A<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>>>>\<Leftrightarrow\><choice|<tformat|<table|<row|<cell|A*B<math-bf|x><rsub|1>=<with|math-font-family|bf|0>>>|<row|<cell|A<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>>>>>>|<row|<cell|>|<cell|<text|方程组二：><choice|<tformat|<table|<row|<cell|B*A<math-bf|x><rsub|1>+A<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>|<row|<cell|B<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>>>>\<Leftrightarrow\><choice|<tformat|<table|<row|<cell|B*A<math-bf|x><rsub|1>=<with|math-font-family|bf|0>>>|<row|<cell|B<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>>>>>>>>>
+  </aligned>>
+
+  以 上 等 价 应 用 了 题 设 条 件 : 若 <math|A<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>,则 <math|B<math-bf|x><rsub|2>=<with|math-font-family|bf|0>>,反 之 亦 然 。 由 <math|A*B<math-bf|x><rsub|1>=<with|math-font-family|bf|0>> 与 <math|B*A<math-bf|x><rsub|1>=<with|math-font-family|bf|0>> 不 一 定 同 解 ( 注 : 只 能 得 出 <math|B<math-bf|x><rsub|1>> 是
+
+  只能得出<math|B<math-bf|x><rsub|1>>是<math|A<math-bf|x>=0>的基础解系，及<math|A<math-bf|x><rsub|1>>是<math|B<math-bf|x>=0>的基础解系，不能得出同解
+
+  <section|相似对角化>
+
+  <\example>
+    \;
+
+    <\equation*>
+      <\aligned>
+        <tformat|<table|<row|<cell|>|<cell|<text|例2(22数一):下述四个条件中,3阶矩阵A可对>>>|<row|<cell|>|<cell|<text|角化的一个充分但不必要条件是()>>>|<row|<cell|>|<cell|<text|(A)A有3个互不相等的特征值>>>|<row|<cell|>|<cell|<text|(B)A有3个线性无关的特征向量>>>|<row|<cell|>|<cell|<text|(C)A有3个两两线性无关的特征向量>>>|<row|<cell|>|<cell|<text|(D)A的属于不同特征值的特征向量正交>>>>>
+      </aligned>
+    </equation*>
+
+    <tabular|<tformat|<table|<row|<cell|A>|<cell|<math|\<Rightarrow\>><math|>>|<cell|>>|<row|<cell|B>|<cell|<math|\<Leftrightarrow\>>>|<cell|A可相似对角化>>|<row|<cell|C>|<cell|<math|\<Leftarrow\>>>|<cell|>>|<row|<cell|D>|<cell|<math|\<nLeftrightarrow\>>>|<cell|>>>>>
+  </example>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|评注:数学定理的表述中有一些默认的潜台词,例>>>|<row|<cell|>|<cell|<text|如定理中说“p是q的充分条件”,潜台词就是告诉>>>|<row|<cell|>|<cell|<text|你“p不是q的必要条件”,因为否则的话他会表述>>>|<row|<cell|>|<cell|<text|为“p是q的充要条件”!这样的例子有很多,回忆>>>|<row|<cell|>|<cell|<text|高数中的““偏导数连续是可微的充分条件”,潜台>>>|<row|<cell|>|<cell|<text|词就是有些可微的二元函数,偏导数并不连续!>>>>>
+  </aligned>>
+
+  \;
+
+  <\example>
+    \;
+
+    <\equation*>
+      <\aligned>
+        <tformat|<table|<row|<cell|>|<cell|<text|例3(22数三):设A为3阶矩阵,A>=<around*|[|<tabular*|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|-1>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|0>>>>>|]><text|,则A>>>|<row|<cell|>|<cell|<text|的特征值为1,-1,0的充分必要条件是()>>>|<row|<cell|>|<cell|<text|(A)存在可逆矩阵P,P,使得 <math|A=P\<Lambda\>Q>>>>|<row|<cell|>|<cell|<text|(B)存在可逆矩阵P,使得 <math|A=P\<Lambda\>P<rsup|-1>>>>>|<row|<cell|>|<cell|<text|(C)存在正交矩阵Q,使得 <math|A=Q\<Lambda\>Q<rsup|-1>>>>>|<row|<cell|>|<cell|<text|(D)存在可逆矩阵P,使得 <math|A=P\<Lambda\>P<rsup|T>>>>>>>
+      </aligned>
+    </equation*>
+
+    <math|<tabular|<tformat|<table|<row|<cell|A>|<cell|<math|>A,矩阵等价的定义，AB相似则AB一定等价>|<cell|<math|\<Leftarrow\>>>|<cell|>>|<row|<cell|B>|<cell|A and \<Lambda\> 相似<around*|(|可对角化|)>的定义>|<cell|\<Leftrightarrow\>>|<cell|A的特征值为1,-1,0>>|<row|<cell|C>|<cell|A 不是实对称矩阵的时候,Q不一定存在>|<cell|\<Rightarrow\>>|<cell|>>|<row|<cell|D>|<cell|矩阵合同的定义>|<cell|\<nLeftrightarrow\>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>>>>>>
+  </example>
+
+  <section|<math|<around*|(|A+E|)><rsup|n>>>
+
+  <\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|展开><around*|(|A+E|)><rsup|n>=A<rsup|n>+nA<rsup|n-1>+\<cdots\>+nA+E.>>|<row|<cell|>|<cell|<text|先求>A<rsup|n>:>>|<row|<cell|>|<cell|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|l>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|<text|利用矩阵乘法的结合律,有>A<rsup|n>>|<cell|=<around*|(|\<alpha\>*\<beta\><rsup|\<top\>>|)>*<around*|(|\<alpha\>*\<beta\><rsup|\<top\>>|)>*\<cdots\>*<around*|(|\<alpha\>*\<beta\><rsup|\<top\>>|)>=\<alpha\>*<around*|(|\<beta\><rsup|\<top\>>*\<alpha\>|)>*\<cdots\>*<around*|(|\<beta\><rsup|\<top\>>*\<alpha\>|)>*\<beta\><rsup|\<top\>>>>>>>>>|<row|<cell|>|<cell|<text|由条件,>\<beta\><rsup|\<top\>>*\<alpha\>=0-1+1=0,<text|故当 >n\<gtr\>1*<text|时,>A<rsup|n>=O>>|<row|<cell|>|<cell|<text|则><around*|(|A+E|)><rsup|n>=nA+E=n <around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|1>>|<row|<cell|-1>>|<row|<cell|1>>>>>|]> <around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|0>|<cell|1>|<cell|1>>>>>|]>+E=<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|n>|<cell|n>>|<row|<cell|0>|<cell|1-n>|<cell|-n>>|<row|<cell|0>|<cell|n>|<cell|n+1>>>>>|]>>>>>
+  </aligned>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-10|<tuple|3.2|5>>
+    <associate|auto-11|<tuple|3.3|5>>
+    <associate|auto-12|<tuple|3.4|5>>
+    <associate|auto-13|<tuple|3.4.1|6>>
+    <associate|auto-14|<tuple|3.5|6>>
+    <associate|auto-15|<tuple|4|7>>
+    <associate|auto-16|<tuple|5|8>>
+    <associate|auto-17|<tuple|5.1|8>>
+    <associate|auto-18|<tuple|6|10>>
+    <associate|auto-19|<tuple|6.1|11>>
+    <associate|auto-2|<tuple|1|1>>
+    <associate|auto-20|<tuple|7|12>>
+    <associate|auto-21|<tuple|8|14>>
+    <associate|auto-22|<tuple|9|15>>
+    <associate|auto-3|<tuple|1.1|1>>
+    <associate|auto-4|<tuple|1.2|2>>
+    <associate|auto-5|<tuple|2|3>>
+    <associate|auto-6|<tuple|2.1|4>>
+    <associate|auto-7|<tuple|2.2|4>>
+    <associate|auto-8|<tuple|3|4>>
+    <associate|auto-9|<tuple|3.1|4>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|1<space|2spc>线性代数> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|1fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>线性表出> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|1.1<space|2spc>线性相关 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|1.2<space|2spc>向量组等价 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-4>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>两个方程同解> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|2.1<space|2spc><with|color|<quote|red>|已知特征值，求特征向量 <with|color|<quote|red>|♥>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|1tab>|2.2<space|2spc>[分析]矩阵的对角化： <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-7>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>A; 特征值；求可逆矩阵P ，相应的对角矩阵 <with|mode|<quote|math>|\<Lambda\>>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-8><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|3.1<space|2spc>相似的必要条件 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-9>>
+
+      <with|par-left|<quote|1tab>|3.2<space|2spc>实对称矩阵A（含参数），求可逆矩阵P，求对角矩阵<with|mode|<quote|math>|\<Lambda\>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-10>>
+
+      <with|par-left|<quote|1tab>|3.3<space|2spc>实对称矩阵的正交规范化 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-11>>
+
+      <with|par-left|<quote|1tab>|3.4<space|2spc><with|mode|<quote|math>|f<around*|(|A|)>>的特征值 及对应的特征向量 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-12>>
+
+      <with|par-left|<quote|2tab>|3.4.1<space|2spc>实对称矩阵必可对角化 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-13>>
+
+      <with|par-left|<quote|1tab>|3.5<space|2spc><with|mode|<quote|math>|A<around*|[|x<rsub|1>,x<rsub|2>|]>=<around*|[|b<rsub|1>,b<rsub|2>|]>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-14>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>行列变换> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-15><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>方程组同解> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-16><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|5.1<space|2spc>x1=x2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-17>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>\|A\|> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-18><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|6.1<space|2spc>克拉默法则 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-19>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>已知两个方程组的通解，求公共解。> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-20><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>相似对角化> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-21><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc><with|mode|<quote|math>|<around*|(|A+E|)><rsup|n>>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-22><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>
