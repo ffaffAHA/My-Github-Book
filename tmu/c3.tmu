@@ -5,6 +5,20 @@
 <\body>
   <chapter|最最最易错的分解>
 
+  <section|导函数的零点存在性>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|【导函数的零点存在性】>>>|<row|<cell|>|<cell|<text|设>f<rprime|'><around|(|x|)>*<text|存在,如果>f<around|(|x|)>*<text|有 >k*<text|个零点,则>f<rprime|'><around|(|x|)>*<text|至少有 >k-1*<text|个零点 >\<cdots\>,f<rsup|<around|(|k-1|)>><around|(|x|)><text|至少有 1 个零点。>>>>>
+  </aligned>>
+
+  <math|<\aligned>
+    <tformat|<cwith|1|-1|1|1|cell-width|2>|<cwith|1|-1|1|1|cell-hmode|exact>|<table|<row|<cell|>|<cell|<text|“至多有几个零点“定理:若>f<rprime|'><around|(|x|)>*<text|至多有 >k*<text|个零点,则>f<around|(|x|)>*<text|至多有 >k+1<text|个零点。>>>|<row|<cell|>|<cell|<text|至少有几个零点:导数多一阶,零点个数 少 1.(记住罗尔,则记住导数多一阶)>>>|<row|<cell|>|<cell|至*多*有*几*个*零*点:导*数*少*一*阶,零*点*个*数*多*1.>>>>
+  </aligned>>
+
+  <section|周期T>
+
+  反例<math|f<around|(|x|)>=1.*<text|则>f<around|(|x|)>*<text|可以任意有理数为周期。>F<around|(|x|)>=x+C>不是周期函数。
+
   <\section>
     隐函数的存在定理
   </section>
@@ -414,13 +428,15 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
+    <associate|auto-10|<tuple|6|?>>
     <associate|auto-2|<tuple|1|1>>
-    <associate|auto-3|<tuple|1.1|1>>
-    <associate|auto-4|<tuple|1.2|3>>
-    <associate|auto-5|<tuple|2|5>>
-    <associate|auto-6|<tuple|3|5>>
-    <associate|auto-7|<tuple|3.1|6>>
-    <associate|auto-8|<tuple|4|6>>
+    <associate|auto-3|<tuple|2|1>>
+    <associate|auto-4|<tuple|3|3>>
+    <associate|auto-5|<tuple|3.1|5>>
+    <associate|auto-6|<tuple|3.2|5>>
+    <associate|auto-7|<tuple|4|6>>
+    <associate|auto-8|<tuple|5|6>>
+    <associate|auto-9|<tuple|5.1|?>>
   </collection>
 </references>
 
