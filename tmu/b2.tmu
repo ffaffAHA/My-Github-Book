@@ -661,11 +661,63 @@
     <math|<tabular|<tformat|<table|<row|<cell|A>|<cell|<math|>A,矩阵等价的定义，AB相似则AB一定等价>|<cell|<math|\<Leftarrow\>>>|<cell|>>|<row|<cell|B>|<cell|A and \<Lambda\> 相似<around*|(|可对角化|)>的定义>|<cell|\<Leftrightarrow\>>|<cell|A的特征值为1,-1,0>>|<row|<cell|C>|<cell|A 不是实对称矩阵的时候,Q不一定存在>|<cell|\<Rightarrow\>>|<cell|>>|<row|<cell|D>|<cell|矩阵合同的定义>|<cell|\<nLeftrightarrow\>>|<cell|>>|<row|<cell|>|<cell|>|<cell|>|<cell|>>>>>>
   </example>
 
+  <section|实对称可相似对角化<math|\<Leftrightarrow\>>特征值相等>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|注意:特征值相同是任意矩阵相似的必要条件,但只当矩阵实对称时,才是充分条件。即:>>>|<row|<cell|>|<cell|矩*阵*相*似\<Rightarrow\><text|特征值相同>.>>|<row|<cell|>|<cell|<around*|\<nobracket\>|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|<text|特征值相同>>>|<row|<cell|>>|<row|<cell|<text|实对称矩阵>>>>>>|}>\<Rightarrow\><text|矩阵相似>.>>>>
+  </aligned>>
+
+  <section|<math|A\<alpha\>=0;A\<beta\>=3\<beta\>>>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|设 >A*<text|为 >4*<text|阶矩阵,>0*<text|是>A*<text|的特征值,>\<alpha\>*<text|是满足>A*\<alpha\>=0<text|的>>>|<row|<cell|>|<cell|<text|非零向量。已知对所有满足><with|math-font-family|bf|\<alpha\>><rsup|\<top\>>*<with|math-font-family|bf|\<beta\>>=0*<text|的 >4*<text|维列向量 ><with|math-font-family|bf|\<beta\>><text|,都>>>|<row|<cell|>|<cell|<text|有 >A*<with|math-font-family|bf|\<beta\>>=3*<with|math-font-family|bf|\<beta\>>,<text|则>>>>>
+  </aligned>>
+
+  所有满足<math|\<b-alpha\><rsup|\<top\>>*\<b-beta\>=0>的 4 维列向量<math|<with|math-font-family|bf|\<beta\>>>,即方程<math|\<b-alpha\><rsup|\<top\>>*\<b-beta\>=0>的解。\ 
+
+  因为<math|\<b-alpha\>> 是非零向量，则 <math|r<around|(|\<b-alpha\>|)>=1>, 故<math|\<b-alpha\><rsup|\<top\>>*\<b-beta\>=0> 线性无关解的个数 <math|=4-r<around|(|\<b-alpha\>|)>=4-1=3>.\ 
+
+  由于<math|A*\<b-beta\>=3*\<b-beta\>>,由特征向量定义，则<math|\<b-beta\>>为<math|A>对应特征值 3 的特征向量。\ 
+
+  综上，<math|A>对应特征值 3 有 3 个线性无关的特征向量，即特征值 3 为三重根。
+
+  由于<math|<with|math-font-family|bf|\<alpha\>>>是满足<math|A*<with|math-font-family|bf|\<alpha\>>=<with|math-font-family|bf|0>>的非零向量，则<math|<with|math-font-family|bf|\<alpha\>>>为<math|A>对应特征值0的特征向量。
+
+  综上，<math|A>有特征值0，3,3,3,且重根 3 有 3 个线性无关的特征向量，故<math|A>可以相似对角化。
+
   <section|<math|<around*|(|A+E|)><rsup|n>>>
 
   <\aligned>
     <tformat|<table|<row|<cell|>|<cell|<text|展开><around*|(|A+E|)><rsup|n>=A<rsup|n>+nA<rsup|n-1>+\<cdots\>+nA+E.>>|<row|<cell|>|<cell|<text|先求>A<rsup|n>:>>|<row|<cell|>|<cell|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|r>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|l>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|<text|利用矩阵乘法的结合律,有>A<rsup|n>>|<cell|=<around*|(|\<alpha\>*\<beta\><rsup|\<top\>>|)>*<around*|(|\<alpha\>*\<beta\><rsup|\<top\>>|)>*\<cdots\>*<around*|(|\<alpha\>*\<beta\><rsup|\<top\>>|)>=\<alpha\>*<around*|(|\<beta\><rsup|\<top\>>*\<alpha\>|)>*\<cdots\>*<around*|(|\<beta\><rsup|\<top\>>*\<alpha\>|)>*\<beta\><rsup|\<top\>>>>>>>>>|<row|<cell|>|<cell|<text|由条件,>\<beta\><rsup|\<top\>>*\<alpha\>=0-1+1=0,<text|故当 >n\<gtr\>1*<text|时,>A<rsup|n>=O>>|<row|<cell|>|<cell|<text|则><around*|(|A+E|)><rsup|n>=nA+E=n <around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|1>>|<row|<cell|-1>>|<row|<cell|1>>>>>|]> <around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|0>|<cell|1>|<cell|1>>>>>|]>+E=<around*|[|<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|2|2|cell-halign|c>|<cwith|1|-1|3|3|cell-halign|c>|<cwith|1|-1|3|3|cell-rborder|0ln>|<table|<row|<cell|1>|<cell|n>|<cell|n>>|<row|<cell|0>|<cell|1-n>|<cell|-n>>|<row|<cell|0>|<cell|n>|<cell|n+1>>>>>|]>>>>>
   </aligned>
+
+  <section|AB=BA <math|A<around*|(|B x|)>=\<lambda\><around*|(|B x|)>>>
+
+  设<math|A,B> 为<math|n> 阶矩阵，且<math|A*B=B*A>,矩阵<math|A> 有 <math|n> 个不相等的特征值。已知 <math|<math-bf|x>> 为<math|A> 的特征向量，则
+
+  A. <math|B<math-bf|x>> 是<math|A> 的特征向量，<math|<math-bf|x>> 是<math|B> 的特征向量\ 
+
+  B. <math|B<math-bf|x>>是<math|A>的特征向量，但<math|<math-bf|x>>不一定是<math|B>的特征向量
+
+  <with|color|red|C. <math|<math-bf|x>> 是<math|B> 的特征向量，但<math|B<math-bf|x>> 不一定是<math|A> 的特征向量>
+
+  <math|\<cal-D\>>. <math|B<math-bf|x>>不一定是<math|A>的特征向量，<math|<math-bf|x>>不一定是<math|B>的特征向量
+
+  <\math>
+    Bx\<neq\>0 Bx=kx
+
+    Bx=0=0\<cdot\>x
+
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|1.*<text|若 >B<math-bf|x>\<neq\><with|math-font-family|bf|0>,<text|则由特征向量的定义,>B<math-bf|x><text|是>A*<text|对应 >\<lambda\><text|的特征向量。>>>|<row|<cell|>|<cell|<text|由于 >A*<text|的特征值不符等,则 >A*<text|对应 >\<lambda\><text|只有一个线性无关的特征向量,>>>|<row|<cell|>|<cell|<text|由于 ><math-bf|x><text|是>A*<text|对应 >\<lambda\>*<text|的特征向量,则 >B<math-bf|x><text|与 ><math-bf|x><text|线性相关,即 >B<math-bf|x>=k<math-bf|x>,k\<neq\>0,>>|<row|<cell|>|<cell|<text|由特征向量的定义,即 ><math-bf|x><text|是 >B*<text|对应 >k<text|的特征向量。>>>|<row|<cell|>|<cell|2.*<text|若 >B<math-bf|x>=<with|math-font-family|bf|0>,<text|由特征向量的定义,>B<math-bf|x><text|不是>A*<text|对应 >\<lambda\><text|的特征向量。>>>|<row|<cell|>|<cell|<text|由 >B<math-bf|x>=<with|math-font-family|bf|0>=0\<cdot\><math-bf|x>,<text|由特征向量的室的>,<math-bf|x><text|是 >B*<text|对应 >0<text|的特征向量。>>>|<row|<cell|>|<cell|<text|综上,无论 >B<math-bf|x><text|是否为 ><with|math-font-family|bf|0><text|都得到 ><math-bf|x><text|是 >B<text|的特征向量。>>>|<row|<cell|>|<cell|<text|但只有 >B<math-bf|x>\<neq\>0*<text|时,>B<math-bf|x><text|才是 >A*<text|的特征向量。因为 >B<math-bf|x><text|可能为 >0*<text|,故 >B<math-bf|x><text|不一定是 >A<text|的特征向量。>>>>>
+    </aligned>
+  </math>
+
+  <section|细节点>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|2)<text|当>\<lambda\><rsub|3>=-3<text|时>,<text|由><around|(|-3*E-A|)><math-bf|x>=0,<text|系数矩阵>>>|<row|<cell|>|<cell|-3*E-A=<around*|[|<tabular*|<tformat|<table|<row|<cell|-4>|<cell|0>|<cell|-2>>|<row|<cell|0>|<cell|-5>|<cell|0>>|<row|<cell|-2>|<cell|0>|<cell|-1>>>>>|]>\<to\><around*|[|<tabular*|<tformat|<table|<row|<cell|2>|<cell|0>|<cell|1>>|<row|<cell|0>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|0>>>>>|]>,>>|<row|<cell|>|<cell|<text|同上解得 >\<alpha\><rsub|3>=<around|(|1,0,<with|color|red|-2>|)><rsup|\<top\>><text|是一个基础解系>,<text|即属于特征值>\<lambda\><rsub|3>=-3<text|的一个特征向量。>>>>>
+  </aligned>>
 </body>
 
 <\initial>
@@ -692,6 +744,10 @@
     <associate|auto-20|<tuple|7|12>>
     <associate|auto-21|<tuple|8|14>>
     <associate|auto-22|<tuple|9|15>>
+    <associate|auto-23|<tuple|10|15>>
+    <associate|auto-24|<tuple|11|15>>
+    <associate|auto-25|<tuple|12|?>>
+    <associate|auto-26|<tuple|13|?>>
     <associate|auto-3|<tuple|1.1|1>>
     <associate|auto-4|<tuple|1.2|2>>
     <associate|auto-5|<tuple|2|3>>
@@ -748,6 +804,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>相似对角化> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-21><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc><with|mode|<quote|math>|<around*|(|A+E|)><rsup|n>>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-22><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>AB=BA <with|mode|<quote|math>|A<around*|(|B x|)>=\<lambda\><around*|(|B x|)>>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-23><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>细节点> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-24><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

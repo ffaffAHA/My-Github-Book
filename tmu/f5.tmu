@@ -501,50 +501,71 @@
     <tformat|<table|<row|<cell|>|<cell|f<around|(|1,1|)>=<around|(|1-1|)>*<around|(|1-1|)>*e<rsup|-1>=0,>>|<row|<cell|>|<cell|f<around|(|3,3|)>=<around|(|1-3|)>*<around|(|3-1|)>*e<rsup|-3>=-4*e<rsup|-3>,>>|<row|<cell|>|<cell|f<around*|(|-1-<sqrt|2>,1+<sqrt|2>|)>=<around*|(|1-<around*|(|-1-<sqrt|2>|)>|)>*<around*|(|1+<sqrt|2>-1|)>*e<rsup|-1-<sqrt|2>>=<around*|(|2+2*<sqrt|2>|)>*e<rsup|-1-<sqrt|2>>,>>|<row|<cell|>|<cell|f<around|(|0,0|)>=<around|(|0-1|)>*<around|(|1-0|)>*e<rsup|-0>=-1,>>>>
   </aligned>>
 
-  \;
+  <section|多元函数极值问题>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|由>lim<rsub|x\<to\>0,y\<to\>0> <frac|f<around|(|x,y|)>-x<rsup|2>*y+2*x*y<rsup|2>|<around*|(|x<rsup|2>+y<rsup|2>|)><rsup|2>>=1*<text|可知,>x\<to\>0,y\<to\>0*<text|时>f<around|(|x,y|)>\<sim\>x<rsup|2>*y-2*x*y<rsup|2>+<around*|(|x<rsup|2>+y<rsup|2>|)><rsup|2>.*<text|构建路径,通过多元极值定义判定><around|(|0,0|)><text|是否为>极值？>>>>
+  </aligned>>
+
+  <\math>
+    y=k x
+
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|当 >x*<text|与 >y*<text|沿 >x=k*y*<text|趋向于 ><around|(|0,0|)>*<text|时, >f<around|(|x,y|)>\<sim\>k<rsup|2>*y<rsup|3>-2*k*y<rsup|3>+<around*|(|k<rsup|2>+1|)><rsup|2>*y<rsup|4>.>>|<row|<cell|>|<cell|<text|当>k<rsup|2>-2*k\<gtr\>0*<text|时,对于 >y\<gtr\>0*<text|的点 >f<around|(|x,y|)>-f<around|(|0,0|)>=f<around|(|x,y|)>\<sim\>k<rsup|2>*y<rsup|3>-2*k*y<rsup|3>+<around*|(|k<rsup|2>+1|)><rsup|2>*y<rsup|4>\<sim\>k<rsup|2>*y<rsup|3>-2*k*y<rsup|3>=<around*|(|k<rsup|2>-2*k|)>*y<rsup|3>\<gtr\>0;<text|对于>>>|<row|<cell|>|<cell|y\<less\>0*<text|的点,>f<around|(|x,y|)>-f<around|(|0,0|)>\<sim\>k<rsup|2>*y<rsup|3>-2*k*y<rsup|3>=<around*|(|k<rsup|2>-2*k|)>*y<rsup|3>\<less\>0>>>>
+    </aligned>
+
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<text|若存在><around*|(|0,0|)>*<text|的某邻域,此邻域内任意点均满足>f<around|(|x,y|)>\<geq\>f<around|(|0,0|)>*<text|(或>f<around|(|x,y|)>\<leq\>f<around|(|0,0|)><text|)时,><around|(|0,0|)><text|为极值点。根据以上分析,对任意邻域,均存在>>>|<row|<cell|>|<cell|<text|不满足条件的路径。故点><around*|(|0,0|)>*<text|不是>f<around|(|x,y|)><text|的极值点。>>>>>
+    </aligned>
+  </math>
 </body>
 
 <\initial>
   <\collection>
+    <associate|chapter-nr|4>
+    <associate|page-first|59>
     <associate|page-medium|paper>
     <associate|page-screen-margin|false>
+    <associate|section-nr|10>
+    <associate|subsection-nr|0>
   </collection>
 </initial>
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-10|<tuple|2.1|3|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-11|<tuple|3|3|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-12|<tuple|3.1|3|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-13|<tuple|3.2|4|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-14|<tuple|3.3|5|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-15|<tuple|4|6|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-16|<tuple|5|8|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-17|<tuple|6|8|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-18|<tuple|6.1|8|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-19|<tuple|6.2|9|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-2|<tuple|1|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-20|<tuple|6.2.1|9|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-21|<tuple|6.3|10|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-22|<tuple|6.4|10|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-23|<tuple|7|11|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-3|<tuple|1.1|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-4|<tuple|1.2|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-5|<tuple|1.3|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-6|<tuple|1.4|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-7|<tuple|1.5|2|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-8|<tuple|1.6|2|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|auto-9|<tuple|2|3|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|footnote-1|<tuple|1|2|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
-    <associate|footnr-1|<tuple|1|2|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
+    <associate|auto-1|<tuple|5|59>>
+    <associate|auto-10|<tuple|2.1|61>>
+    <associate|auto-11|<tuple|3|61>>
+    <associate|auto-12|<tuple|3.1|61>>
+    <associate|auto-13|<tuple|3.2|62>>
+    <associate|auto-14|<tuple|3.3|63>>
+    <associate|auto-15|<tuple|4|64>>
+    <associate|auto-16|<tuple|5|66>>
+    <associate|auto-17|<tuple|6|66>>
+    <associate|auto-18|<tuple|6.1|66>>
+    <associate|auto-19|<tuple|6.2|67>>
+    <associate|auto-2|<tuple|1|59>>
+    <associate|auto-20|<tuple|6.2.1|67>>
+    <associate|auto-21|<tuple|6.3|68>>
+    <associate|auto-22|<tuple|6.4|68>>
+    <associate|auto-23|<tuple|7|69>>
+    <associate|auto-24|<tuple|8|?>>
+    <associate|auto-3|<tuple|1.1|59>>
+    <associate|auto-4|<tuple|1.2|59>>
+    <associate|auto-5|<tuple|1.3|59>>
+    <associate|auto-6|<tuple|1.4|59>>
+    <associate|auto-7|<tuple|1.5|60>>
+    <associate|auto-8|<tuple|1.6|60>>
+    <associate|auto-9|<tuple|2|61>>
+    <associate|footnote-1|<tuple|1|60>>
+    <associate|footnr-1|<tuple|1|60>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|1<space|2spc>高数下> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|1fn>
+      <vspace*|2fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|font-size|<quote|1.19>|5<space|2spc>高数下> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|1fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>微分方程> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-2><vspace|0.5fn>
 
