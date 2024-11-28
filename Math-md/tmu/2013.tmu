@@ -1,0 +1,54 @@
+<TMU|<tuple|1.0.5|1.2.9.5>>
+
+<project|Math_all.tm>
+
+<style|<tuple|generic|chinese>>
+
+<\body>
+  <section|2013>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|<around|(|2|)>>|<cell|<text|设函数 >y=f<around|(|x|)>*<text|由方程>cos <around|(|x*y|)>+ln y-x>|<cell|=1<text|确定 >,<text|则>lim<rsub|n\<to\>\<infty\>> n*<around*|[|f<around*|(|<frac|2|n>|)>-1|]>=>|<cell|(>>|<row|<cell|<around|(|<text|A >|)>*2.>|<cell|<around|(|<text|B >|)>*1.>|<cell|<around|(|<text|C >|)>-1.>|<cell|<around|(|<text|D >|)>-2.>>>>
+  </aligned>>
+
+  \;
+
+  <\math>
+    <\aligned>
+      <tformat|<table|<row|<cell|>|<cell|<around|(|6|)>*<text|设 >D<rsub|k>*<text|是圆域 >D=<around|{|<around|(|x,y|)>\<mid\>x<rsup|2>+y<rsup|2>\<leqslant\>1|}>*<text|在第 >k*<text|象限的部分. 记 >I<rsub|k>=<big|iint><rsub|D<rsub|k>><around|(|y-x|)><math-up|d>x<math-up|d>y(k=1,2,>>|<row|<cell|>|<cell|3,4),<text|则()>>>|<row|<cell|>|<cell|<around|(|<math-up|A>|)>*I<rsub|1>\<gtr\>0.<around|(|<math-up|B>|)>*I<rsub|2>\<gtr\>0.<around|(|<math-up|C>|)>*I<rsub|3>\<gtr\>0.<around|(|<math-up|D>|)>*I<rsub|4>\<gtr\>0.>>>>
+    </aligned>
+
+    <math|(<text|11) 设封闭曲线 >L*<text|的极坐标方程为 >r=cos 3*\<theta\>*<around*|(|-<frac|\<pi\>|6>\<leqslant\>\<theta\>\<leqslant\><frac|\<pi\>|6>|)>,<text|则 >L<text|所围平面图形的面积是><wide*|<space|1em>|\<bar\>>>.
+
+    <math|<around|(|14|)>*<text|设 >A=<around|(|a<rsub|i*j>|)><text|是3 阶非零矩阵>,<around|\||A|\|>*<text|为>A<text|的行列式>,A<rsub|i*j>*<text|为 >a<rsub|i*j><text|的代数余子式>.*<text|若 >a<rsub|i*j>+A<rsub|i*j>=0<next-line><around|(|i,j=1,2,3|)>,<text|则><around|\||A|\|>=>
+
+    <math|<\aligned>
+      <tformat|<table|<row|<cell|<around|(|19|)>>|<cell|<text|(本题满分 10 分)>>>|<row|<cell|>|<cell|<text|求曲线 >x<rsup|3>-x*y+y<rsup|3>=1*<around|(|x\<geq\>0,y\<geq\>0|)><text|上的点到坐标原点的最长距离和最短距离>.>>>>
+    </aligned>>
+
+    <\aligned>
+      <tformat|<table|<row|<cell|<text|(20)>>|<cell|<text|(本题满分11分)>>>|<row|<cell|>|<cell|<text|设函数>f<around|(|x|)>=ln x+<frac|1|x>,>>|<row|<cell|>|<cell|(<tabular*|<tformat|<cwith|1|-1|1|1|cell-halign|c>|<cwith|1|-1|1|1|cell-lborder|0ln>|<cwith|1|-1|1|1|cell-rborder|0ln>|<table|<row|<cell|<text|I)求>f<around|(|x|)>>>>>><text|的最小值>;>>|<row|<cell|>|<cell|<text|(II)设数列><around*|{|x<rsub|n>|}>*<text|满足>ln x<rsub|n>+<frac|1|x<rsub|n+1>>\<less\>1,<text|证明>lim<rsub|n\<to\>\<infty\>> x<rsub|n><text|存在>,<text|并求此极限>.>>>>
+    </aligned>
+  </math>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

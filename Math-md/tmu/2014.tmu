@@ -1,0 +1,68 @@
+<TMU|<tuple|1.0.5|1.2.9.5>>
+
+<project|Math_all.tm>
+
+<style|<tuple|book|chinese>>
+
+<\body>
+  <section|2014>
+
+  # 14
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|<around|(|4|)>>|<cell|<text|曲线><choice|<tformat|<table|<row|<cell|x>|<cell|=t<rsup|2>+7,>>|<row|<cell|y>|<cell|=t<rsup|2>+4*t+1>>>>><text|上对应于 >t=1<text|的点处的曲率半径是><around|(|<space|1em>|)>>>|<row|<cell|<around|(|A|)>>|<cell|<frac|<sqrt|10>|50>.<space|1em><around|(|B|)><frac|<sqrt|10>|100>.<space|1em>(<around|(|E|)><text|SwepleTex>\<cdot\><text|B开的公式Ge900年线>!>>>>
+  </aligned>>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<around|(|6|)>*<text|设函数 >u<around|(|x,y|)>*<text|在有界闭区域 >D<text|上连续>,<text|在 >D<text|的>>>|<row|<cell|>|<cell|<frac|\<partial\><rsup|2>*u|\<partial\>*x<rsup|2>>+<frac|\<partial\><rsup|2>*u|\<partial\>*y<rsup|2>>=0,<text|则><around|(|<space|1em>|)>>>>>
+  </aligned>>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<around|(|A|)>*u<around|(|x,y|)>*<text|的最大值和最小值都在 >D<text|的边界上>]>>|<row|<cell|>|<cell|<around|(|B|)>*u<around|(|x,y|)>*<text|的最大值和最小值都在 >D<text|的内部取>>>|<row|<cell|>|<cell|<around|(|C|)>*u<around|(|x,y|)>*<text|的最大值在 >D<text|的内部取得>,<text|最小值在>>>|<row|<cell|>|<cell|<around|(|D|)>*u<around|(|x,y|)>*<text|的最小值在 >D<text|的内部取得>,<text|最大值在>>>>>
+  </aligned>>
+
+  <math|(<text|12)曲线>L*<text|的极坐标方程是>r=\<theta\>,<text|则>L<text|在点><around|(|r,\<theta\>|)>=<around*|(|<frac|\<pi\>|2>,<frac|\<pi\>|2>|)>>处的切线的直角坐标方程是
+
+  \;
+
+  \;
+
+  <math|<around|(|14|)>*<text|设二次型 >f<around|(|x<rsub|1>,x<rsub|2>,x<rsub|3>|)>=x<rsub|1><rsup|2>-x<rsub|2><rsup|2>+2*a*x<rsub|1>*x<rsub|3>+4*x<rsub|2>*x<rsub|3><text|的负惯性指数为 1>,<text|则 >a>的取值范围
+
+  \;
+
+  \;
+
+  \;
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|(17)(本题满分10分)>>>|<row|<cell|>|<cell|<text|设平面区域>D=<around|\||<around|(|x,y|)>|\|>*1\<leqslant\>x<rsup|2>+y<rsup|2>\<leqslant\>4,x\<geqslant\>0,y\<geqslant\>0\|.<text|计算><big|iint><rsub|D><frac|x*sin <around|(|\<pi\><sqrt|x<rsup|2>+y<rsup|2>>|)>|x+y><math-up|d>x<math-up|d>y.>>>>
+  </aligned>>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|(20)(本题满分11分)>>>|<row|<cell|>|<cell|<text|设函数>f<around|(|x|)>=<frac|x|1+x>,x\<in\><around|[|0,1|]>.<text|定义函数列>:>>|<row|<cell|>|<cell|f<rsub|1><around|(|x|)>=f<around|(|x|)>,f<rsub|2><around|(|x|)>=f<around|(|f<rsub|1><around|(|x|)>|)>,\<cdots\>,f<rsub|n><around|(|x|)>=f<around|(|f<rsub|n-1><around|(|x|)>|)>,\<cdots\>.>>|<row|<cell|>|<cell|<text|记>S<rsub|n>*<text|是由曲线 >y=f<rsub|n><around|(|x|)>,<text|直线 >x=1*<text|及>x*<text|轴所围平面图形的面积求极限>lim<rsub|n\<to\>\<infty\>> n*S<rsub|n>.>>>>
+  </aligned>>
+
+  \;
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>
