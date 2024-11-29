@@ -12,6 +12,9 @@
 
     3<space|2spc>2015 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-3>
+
+    4<space|2spc>2016 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-4>
   </table-of-contents>
 
   <include|2013.tmu>
@@ -19,6 +22,8 @@
   <include|2014.tmu>
 
   <include|2015.tmu>
+
+  <include|2016.tmu>
 </body>
 
 <\initial>
@@ -34,9 +39,11 @@
     <associate|auto-1|<tuple|1|1|2013.tmu>>
     <associate|auto-2|<tuple|2|1|2014.tmu>>
     <associate|auto-3|<tuple|3|2|2015.tmu>>
+    <associate|auto-4|<tuple|4|3|2016.tmu>>
     <associate|part:2013.tmu|<tuple|?|1>>
     <associate|part:2014.tmu|<tuple|1|1>>
     <associate|part:2015.tmu|<tuple|2|2>>
+    <associate|part:2016.tmu|<tuple|3|3>>
   </collection>
 </references>
 
@@ -48,6 +55,8 @@
       <tuple|2014.tmu|chapter-nr|0|section-nr|1|subsection-nr|0>
 
       <tuple|2015.tmu|chapter-nr|0|section-nr|2|subsection-nr|0>
+
+      <tuple|2016.tmu|chapter-nr|0|section-nr|3|subsection-nr|0>
     </associate>
     <\associate|toc>
       1<space|2spc>2013 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
@@ -58,6 +67,9 @@
 
       3<space|2spc>2015 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>
+
+      4<space|2spc>2016 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>
     </associate>
   </collection>
 </auxiliary>
