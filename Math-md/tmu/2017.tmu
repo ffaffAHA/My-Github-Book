@@ -1,0 +1,102 @@
+<TMU|<tuple|1.0.5|1.2.9.5>>
+
+<project|Math_all.tm>
+
+<style|<tuple|generic|chinese>>
+
+<\body>
+  <section|2017>
+
+  # 17
+
+  <math|<around|(|4|)>*<text|微分方程 >y<rsup|\<prime\>*\<prime\>>-4*y<rprime|'>+8*y=<math-up|e><rsup|2*x><around|(|1+cos 2*x|)>*<text|的特解可设为>>
+
+  对应齐次方程的特征方程为 <math|r<rsup|2>-4*r+8=0,<text|解得 >r<rsub|1,2>=2\<pm\>2<math-up|i>>.
+
+  方程 <math|y<rsup|\<prime\>*\<prime\>>-4*y<rprime|'>+8*y=<math-up|e><rsup|2*x><text|的特解可设为 >y<rsub|1><rsup|\<ast\>>=A<math-up|e><rsup|2*x>>.
+
+  方程 <math|y<rsup|\<prime\>*\<prime\>>-4*y<rprime|'>+8*y=<math-up|e><rsup|2*x>cos 2*x*<text|的特解可设为 >y<rsub|2><rsup|\<ast\>>=x<math-up|e><rsup|2*x><around|(|B<math-up|cos>2*x+<with|math-font-family|rm|Csin<nbsp>>2*x|)>>.
+
+  <math|<around|(|8|)>*<text|已知矩阵>A=<matrix|<tformat|<table|<row|<cell|2>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|2>|<cell|1>>|<row|<cell|0>|<cell|0>|<cell|1>>>>>,\<b-B\>=<matrix|<tformat|<table|<row|<cell|2>|<cell|1>|<cell|0>>|<row|<cell|0>|<cell|2>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|1>>>>>,\<b-C\>=<matrix|<tformat|<table|<row|<cell|1>|<cell|0>|<cell|0>>|<row|<cell|0>|<cell|2>|<cell|0>>|<row|<cell|0>|<cell|0>|<cell|2>>>>>,<text|则><around|(|<space|1em>|)>>
+
+  (B)A 与 C 相似,B 与 C 不相似.
+
+  <math|“*A*和*B*都*是*上*三*角*形*矩*阵,特*征*值*是*对*角*线*上*的*元*素,都*是*1,2,2,它*们*是*否*与*C*相*似*只*需*看*它*们*是*否*可*相*似*对*角*化.*对*二*重*特*征*值*2,n-r*<around|(|2*E-A|)>=3-1=2*<around|(|等*于*重*数|)>,于*是*A*可*相*似*对*角*化,A*相*似*于*C.*对*二*重*特*征*值*2,n-r*<around|(|2*E-B|)>=3-2=1*<around|(|小*于*重*数|)>,于*是*B*不*可*相*似*对*角*化,B*与*C*不*相*似>.
+
+  <\equation*>
+    <math|<big|iint><rsub|D>x<rsup|2><math-up|d>x<math-up|d>y=<big|int><rsub|0><rsup|\<pi\>><math-up|d>\<theta\>*<big|int><rsub|0><rsup|2*sin \<theta\>>r<rsup|3>*cos<rsup|2> \<theta\><math-up|d>r>
+  </equation*>
+
+  <\equation*>
+    <math|=4*<big|int><rsub|0><rsup|\<pi\>>sin<rsup|4> \<theta\>*cos<rsup|2> \<theta\><math-up|d>\<theta\>>
+  </equation*>
+
+  <\equation*>
+    <math|=<big|int><rsub|0><rsup|\<pi\>><frac|1-cos 2*\<theta\>|2>*sin<rsup|2> 2*\<theta\><math-up|d>\<theta\>>
+  </equation*>
+
+  <\equation*>
+    <math|=<frac|1|2>*<big|int><rsub|0><rsup|\<pi\>>sin<rsup|2> 2*\<theta\><math-up|d>\<theta\>-<frac|1|2>*<big|int><rsub|0><rsup|\<pi\>>cos 2*\<theta\>*sin<rsup|2> 2*\<theta\><math-up|d>\<theta\>>
+  </equation*>
+
+  <\equation*>
+    <math|=<frac|1|2>*<big|int><rsub|0><rsup|\<pi\>>sin<rsup|2> 2*\<theta\><math-up|d>\<theta\>-<frac|1|2>*<big|int><rsub|0><rsup|\<pi\>>cos 2*\<theta\>*sin<rsup|2> 2*\<theta\><math-up|d>\<theta\>>
+  </equation*>
+
+  <math|<\aligned>
+    <tformat|<table|<row|<cell|>|<cell|<text|设 >y<around|(|x|)><text|是区间><around*|(|0,<frac|3|2>|)><text|内的可导函数>,<text|且 >y<around|(|1|)>=0.*<text|点 >P*<text|是曲线 >l:y=y<around|(|x|)><text|上的任意一点 >,>>|<row|<cell|>|<cell|l*<text|在点 >P*<text|处的切线与 >y*<text|轴相交于点><around|(|0,Y<rsub|p>|)>,<text|法线与 >x*<text|轴相交 于点><around|(|X<rsub|p>,0|)>,<text|若 >X<rsub|p>=Y<rsub|p>,<text|求 >l<text|上点>>>|<row|<cell|>|<cell|<text|的坐标><around|(|x,y|)><text|满足的方程>.>>>>
+  </aligned>>
+
+  <math|<\aligned>
+    <tformat|<cwith|1|-1|1|1|cell-hyphen|n>|<table|<row|<cell|>|<cell|<around|(|21|)><text|<with|font-series|bold|解>><space|1em><text|曲线 >l:y=y<around|(|x|)>*<text|在点 >P*<around|(|x,y|)><text|处的切线方程为>>>|<row|<cell|>|<cell|Y-y=y<rprime|'>*<around|(|X-x|)>>>>>
+  </aligned>>
+
+  <with|color|blue|令 <math|X=0*<text|得>Y<rsub|P>=y-x*y<rprime|'>>.>
+
+  <math|<\aligned>
+    <tformat|<cwith|3|3|1|-1|color|blue>|<table|<row|<cell|<text|曲线 >l:y>|<cell|=y<around|(|x|)>*<text|在点 >P*<around|(|x,y|)><text|处的法线方程为>>>|<row|<cell|y<rprime|'>*<around|(|Y-y|)>>|<cell|=-X+x,>>|<row|<cell|<text|令 >Y>|<cell|=0*<text|得 >X<rsub|P>=x+y*y<rprime|'>.>>>>
+  </aligned>>
+
+  <\equation*>
+    <math|y<rprime|'>=<frac|y-x|y+x>=<frac|<frac|y|x>-1|<frac|y|x>+1>>,
+  </equation*>
+
+  令<text|<math|<frac|y|x>=u,<text|则><frac|<math-up|d>y|<math-up|d>x>=u+x*<frac|<math-up|d>u|<math-up|d>x>,<text|代人上述方程并分离变量得><frac|1+u|1+u<rsup|2>><math-up|d>u=-<frac|1|x><math-up|d>x>,>
+
+  两边积分得
+
+  <\equation*>
+    <math|arctan u+<frac|1|2><math-up|ln><around|(|1+u<rsup|2>|)>=-ln\|x\|+C>
+  </equation*>
+
+  ,
+
+  即<math|arctan <frac|y|x>+<frac|1|2><math-up|ln><around|(|x<rsup|2>+y<rsup|2>|)>=C,<text|其中 C 为任意常数>>.
+
+  <math|因*为*曲*线*l*过*点<around|(|1,0|)>,所*以*C=0,于*是*曲*线*l*上*点*的*坐*标<around|(|x,y|)>*满*足*的*方*程*为>.
+
+  <\equation*>
+    <math|arctan <frac|y|x>+<frac|1|2>*ln <around|(|x<rsup|2>+y<rsup|2>|)>=0>
+  </equation*>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-medium|paper>
+    <associate|page-screen-margin|false>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|1|C:\\Users\\admin\\AppData\\Roaming\\XmacsLabs\\texts\\scratch\\no_name_3.tm>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>2017> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>> <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>
